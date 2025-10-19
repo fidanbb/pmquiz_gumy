@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Project Management Mock Test 7 - 9 Chapters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .chapter-selection {
+            padding: 40px;
+        }
+        .chapter-selection h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .chapter-selection, .quiz-content, .results {
+                padding: 20px;
+            }
+            
+            .chapter-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
+            
+            .chapter-btn {
+                padding: 20px 15px;
+                font-size: 16px;
+            }
+            
+            .question-text {
+                font-size: 16px;
+            }
+            
+            .option label {
+                padding: 12px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .option input[type="radio"] {
+                margin-right: 8px;
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
+            
+            .navigation {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .btn {
+                width: 100%;
+                padding: 15px;
+            }
+            
+            .results > div:first-child {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .results > div:first-child .back-btn,
+            .results > div:first-child .btn {
+                width: 100%;
+            }
+            
+            .score-circle {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .score-number {
+                font-size: 36px;
+            }
+            
+            .score-label {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .chapter-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .chapter-btn {
+                padding: 25px 20px;
+            }
+            
+            .question-text {
+                font-size: 15px;
+                line-height: 1.5;
+            }
+            
+            .option label {
+                padding: 15px;
+            }
+            
+            .option-text {
+                font-size: 14px;
+            }
+        }
+        .chapter-btn {
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .chapter-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .chapter-info {
+            font-size: 13px;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+        .progress-bar {
+            background: rgba(255,255,255,0.3);
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            background: white;
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+        .quiz-content {
+            padding: 40px;
+        }
+        .back-btn {
+            background: #e0e0e0;
+            color: #666;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            background: #d0d0d0;
+        }
+        .question-number {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .question-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #333;
+        }
+        .options {
+            list-style: none;
+        }
+        .option {
+            margin-bottom: 15px;
+        }
+        .option label {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .option label:hover {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+        .option input[type="radio"] {
+            margin-right: 12px;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+        .option-text {
+            flex: 1;
+            color: #555;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #666;
+        }
+        .btn-secondary:hover {
+            background: #d0d0d0;
+        }
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        .results {
+            padding: 40px;
+        }
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 30px auto;
+            color: white;
+        }
+        .score-number {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .score-label {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .result-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        .result-item.correct {
+            background: #e8f5e9;
+            border-color: #4caf50;
+        }
+        .result-item.incorrect {
+            background: #ffebee;
+            border-color: #f44336;
+        }
+        .result-question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .result-answer {
+            color: #666;
+            margin: 5px 0;
+        }
+        .hidden {
+            display: none;
+        }
+        
+        /* Dark Mode Styles */
+        .dark-mode {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        }
+        
+        .dark-mode .container {
+            background: #2c3e50;
+            color: #ecf0f1;
+        }
+        
+        .dark-mode .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        }
+        
+        .dark-mode .chapter-selection h2,
+        .dark-mode .question-text,
+        .dark-mode .result-question {
+            color: #ecf0f1;
+        }
+        
+        .dark-mode .option label {
+            background: #34495e;
+            border-color: #4a5f7a;
+            color: #ecf0f1;
+        }
+        
+        .dark-mode .option label:hover {
+            background: #4a5f7a;
+            border-color: #667eea;
+        }
+        
+        .dark-mode .option-text {
+            color: #ecf0f1;
+        }
+        
+        .dark-mode .back-btn {
+            background: #4a5f7a;
+            color: #ecf0f1;
+        }
+        
+        .dark-mode .back-btn:hover {
+            background: #5a6f8a;
+        }
+        
+        .dark-mode .btn-secondary {
+            background: #4a5f7a;
+            color: #ecf0f1;
+        }
+        
+        .dark-mode .btn-secondary:hover {
+            background: #5a6f8a;
+        }
+        
+        .dark-mode .result-item {
+            background: #34495e;
+        }
+        
+        .dark-mode .result-item.correct {
+            background: #27ae60;
+        }
+        
+        .dark-mode .result-item.incorrect {
+            background: #e74c3c;
+        }
+        
+        /* Statistics Styles */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        
+        .dark-mode .stat-card {
+            background: #34495e;
+            color: #ecf0f1;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            color: #666;
+        }
+        
+        .dark-mode .stat-label {
+            color: #bdc3c7;
+        }
+        
+        .progress-ring {
+            width: 120px;
+            height: 120px;
+            margin: 20px auto;
+        }
+        
+        .progress-ring circle {
+            fill: none;
+            stroke-width: 8;
+            stroke-linecap: round;
+        }
+        
+        .progress-ring .background {
+            stroke: #e0e0e0;
+        }
+        
+        .dark-mode .progress-ring .background {
+            stroke: #4a5f7a;
+        }
+        
+        .progress-ring .progress {
+            stroke: #667eea;
+            stroke-dasharray: 283;
+            stroke-dashoffset: 0;
+            transition: stroke-dashoffset 0.5s ease;
+        }
+        
+        /* Multiple choice styling */
+        .option input[type="checkbox"] {
+            margin-right: 12px;
+            margin-top: 3px;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+        
+        .option input[type="checkbox"]:checked + .option-text {
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .option input[type="radio"]:checked + .option-text {
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        /* Question type indicator */
+        .type-indicator {
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .type-indicator.multiple {
+            background: #e3f2fd;
+            color: #1976d2;
+            border: 2px solid #bbdefb;
+        }
+        
+        .type-indicator.single {
+            background: #f3e5f5;
+            color: #7b1fa2;
+            border: 2px solid #ce93d8;
+        }
+        
+        .dark-mode .type-indicator.multiple {
+            background: #1e3a8a;
+            color: #93c5fd;
+            border-color: #3b82f6;
+        }
+        
+        .dark-mode .type-indicator.single {
+            background: #581c87;
+            color: #c084fc;
+            border-color: #a855f7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Project Management Mock Test 7</h1>
+            <p id="headerInfo">Select a Chapter to Begin</p>
+            <p style="font-size: 12px; opacity: 0.8; margin-top: 5px;">Questions and options are randomized for each attempt</p>
+            <div class="progress-bar" id="progressBarContainer" style="display:none;">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="chapter-selection" id="chapterSelection">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h2>Choose a Chapter (20 Questions Each)</h2>
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn btn-secondary" onclick="showStatistics()" style="padding: 8px 16px;">📊 Stats</button>
+                    <button class="btn btn-secondary" onclick="toggleDarkMode()" style="padding: 8px 16px;">🌙 Dark</button>
+                </div>
+            </div>
+            <div class="chapter-grid" id="chapterGrid"></div>
+        </div>
+
+        <div class="quiz-content hidden" id="quizContent">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <button class="back-btn" onclick="backToChapters()">← Back to Chapters</button>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <button class="btn btn-secondary" id="bookmarkBtn" onclick="toggleBookmark()" style="padding: 8px 12px; font-size: 18px;">☆</button>
+                    <div id="timer" style="font-weight: bold; color: #667eea; font-size: 16px;">Time: 1:30</div>
+                </div>
+            </div>
+            <div class="question-number" id="questionNumber"></div>
+            <div class="question-text" id="questionText"></div>
+            <ul class="options" id="options"></ul>
+            <div class="navigation">
+                <button class="btn btn-secondary" id="prevBtn" onclick="previousQuestion()">Previous</button>
+                <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Next</button>
+            </div>
+        </div>
+
+        <div class="results hidden" id="results">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <button class="back-btn" onclick="backToChapters()">← Back to Chapters</button>
+                <button class="btn btn-primary" onclick="retryChapter()">Retry This Chapter</button>
+            </div>
+            <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Chapter Results</h2>
+            <div class="score-circle">
+                <div class="score-number" id="scoreNumber"></div>
+                <div class="score-label">out of 20</div>
+            </div>
+            <div id="resultDetails"></div>
+            </div>
+
+        <div class="statistics hidden" id="statistics">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 style="color: #333;">📊 Your Statistics</h2>
+                <button class="back-btn" onclick="backToChapters()">← Back to Chapters</button>
+            </div>
+            <div id="statsContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // ALL 180 QUESTIONS - COMPLETE WITH FULL TEXT
+        // PASTE THE REMAINING QUESTIONS AFTER THIS COMMENT
+        const allQuestions = [
+            // Chapter 1: Questions 1-20
+            {q:"A project manager is planning the construction of a new public library. The community and project stakeholders are having difficulty agreeing on the key features to be included in the final design. What should the project manager do?",o:["Facilitate a workshop to gather input from all stakeholders","Define the differences between essential and non-essential features","Involve the design consultants to mediate stakeholder discussions","Identify the root cause of the stakeholders' inability to agree on the project scope"],a:3},
+            {q:"A project manager convenes an emergency session with the software development team to address significant bugs that are delaying the project's delivery. The product owner suggests conducting a thorough root cause analysis (RCA) to identify the underlying issues. What should the project manager do?",o:["Collaborate with the team to discuss the RCA suggestion and decide collectively on the next steps","Encourage a lead developer to take charge of the RCA process, fostering team autonomy","Coordinate with the quality assurance lead to refine testing processes based on the RCA outcomes","Organize the session to ensure all team members contribute their insights and potential solutions"],a:0},
+            {q:"A project manager overseeing the launch of a new e-commerce platform discovers that the finance department has concerns about not being involved in the cost estimations and their potential impact on the projected returns. What should the project manager do first?",o:["Amend the stakeholder engagement plan to better integrate finance in future phases","Document the exclusion of the finance team as a risk to project success","Maintain the project timeline but plan a financial review before the final phase","Organize a meeting with the finance team to understand the concerns"],a:3},
+            {q:"During a critical phase of a software development project, a key developer notifies the project manager that they will need to take an unexpected leave, impacting the completion of a crucial backlog item scheduled for demonstration in the upcoming sprint review. What should the project manager do?",o:["Insist that the developer work remotely during their leave to ensure the backlog item is completed on time","Escalate the issue to senior management and demand that they assign an additional resource immediately","Reevaluate the sprint goals and backlog priorities, consult with the team about adjustments, and communicate the revised plan to stakeholders","Cancel the upcoming sprint review, citing the lack of progress on the crucial backlog item"],a:2},
+                {q:"A project manager is preparing for a sprint planning session for a new feature in a healthcare management system. This meeting aims to determine the amount of work for the upcoming sprint. Which two pieces of information are essential for the project manager to ensure the meeting is productive and effective? (Choose two.)",o:["Current project phase timeline","Product Market Place Goal","Updated risk assessment","Detailed product backlog","Team performance metrics"],a:[3,4], type:"multiple"},
+            {q:"A project manager is leading an intricate biotechnology research project characterized by significant ambiguity and unpredictability. A suggestion has been made to introduce a system to gauge the quality of the project outputs effectively. What hybrid techniques should the project manager employ to ensure quality assurance?",o:["Combine weekly sprints with quarterly external audits to validate project standards","Merge traditional milestone reviews with agile sprint demonstrations","Adopt pair programming and customer feedback sessions","Integrate continuous integration tools with formal quality control checkpoints"],a:2},
+            {q:"A project team in a digital marketing project discovers that their key design software license has expired, halting the team work on a critical campaign visuals. What is the most effective initial action for the project manager to take?",o:["Request that the team manually sketch the campaign concepts while awaiting license renewal","Have the team work with the IT department to renew the license","Prioritize other aspects of the campaign that don't require design software","Coordinate with the IT department to promptly renew the software license"],a:3},
+            {q:"A project manager is overseeing the development of an enterprise resource planning (ERP) system and has decided that a combination of Scrum and Kanban methodologies would be most effective. However, the product owner is unsure about how to begin organizing and prioritizing work. What should the project manager do?",o:["Guide the product owner on developing and prioritizing a comprehensive product backlog","Have a team member explain the integration of Scrum and Kanban principles to the product owner to enhance understanding","Recommend that the project team use visual management tools to improve workflow visibility","Teach the product owner how to map out process flows to better understand task sequencing"],a:0},
+            {q:"On an agricultural development project, a key team member expresses dissatisfaction with the current risk management strategy, feeling it doesn't adequately address the potential for unpredictable weather conditions affecting crop trials. What action should the project manager take first?",o:["Implement a contingency fund specifically for weather-related delays","Consult with external agricultural experts to gather insights on managing weather-related risks","Reevaluate the risk management plan and risk register with the entire team to incorporate feedback on weather-related risks","Adjust project timelines and milestones to allow for greater flexibility in response to weather changes"],a:2},
+            {q:"During the rollout of a new IT system within a large corporation, the project manager observes that discussions in stakeholder meetings are frequently derailed by a participant who delves into technical details irrelevant to the meeting's objectives. This behavior is causing meetings to overrun and is reducing the time available to cover all agenda items, leading to dissatisfaction among stakeholders. What action should the project manager take to ensure meetings are more focused and productive?",o:["Emphasize the meeting agenda at the start and kindly remind participants to keep discussions on-topic","Allocate specific times for open discussion at the end of meetings to cater to additional topics","Introduce a meeting co-facilitator to help steer conversations back to the agenda when they go off-course","Implement a suggestion box for topics that require further discussion outside of the scheduled meetings"],a:0},
+            {q:"A project manager has begun a complex airport expansion project. Although the project is in the initiation phase, the sponsor keeps asking for concrete dates for the most important project milestones. When will the project manager be able to provide the requested information?",o:["After initial risk assessments are completed to estimate timelines","At the end of the planning phase, once detailed schedules and risk assessments are completed","During the execution phase, when the project is underway and progress can be measured","Once the project charter is signed, as it will outline the initial milestones"],a:1},
+            {q:"A project manager is overseeing a large-scale infrastructure project in a hierarchical organization. The project team members are used to receiving direct instructions, and their performance reviews are based on task completion percentages. After discussing with the sponsor, the project manager realizes that some tasks need to be reassigned to meet the next milestone. This change could be perceived as a negative reflection on the current assignees' performance. What should the project manager do?",o:["Assign the tasks to the most skilled team members without further discussion","Hold a team meeting to explain the changes and collaborate on reassigning tasks","Privately ask a senior team member to take over the tasks and inform the others of the reassignment","Send an email to the team outlining the task changes and the reasons behind them"],a:1},
+            {q:"A project manager is leading a city park renovation project. During a status meeting with city officials, the project manager provides an update about a significant deliverable. Some of the officials claim they were not informed about this deliverable. What should the project manager do next?",o:["Confirm if the project scope has been updated to include the deliverable","Meet with these officials to review the communication plan and clarify the deliverable","Check the attendance records of these officials at prior project meetings","Review the project documentation to ensure the deliverable was communicated"],a:1},
+            {q:"A project manager is overseeing the construction of a new office building. A key stakeholder complains that they never received the structural integrity test status reports. The project manager provides the reports, and the stakeholder notices that an important aspect of the structure was not tested. Which tool should the project manager have used to prevent this situation?",o:["Communication log","Requirements traceability matrix","Stakeholder register","Quality management plan"],a:2},
+            {q:"A project manager is overseeing the development of a new healthcare facility. The project team is struggling to understand some critical aspects of the project's scope. A senior subject matter expert (SME) from the organization's headquarters is available for one week. What should the project manager do to benefit from the SME's presence?",o:["Conduct a workshop with the SME to address the team's challenges","Discuss with the SME the specific scope issues the team is facing","Arrange for the SME to provide training sessions to the team","Have the SME review the project documentation for alignment"],a:2},
+                {q:"A project manager is leading an agile project developing a new customer relationship management (CRM) system. Midway through the project, the team receives feedback from the legal team regarding new data protection laws that the project must adhere to. Which two actions should the project manager take next? (Choose two.)",o:["Direct the product owner to prioritize data protection features in future sprints","Request detailed information about the new laws from the legal team","Have the legal team implement the compliance measures","Plan immediate integration of the compliance requirements to mitigate any legal risks","Conduct an impact analysis with the team to understand the implications of the new laws"],a:[1,4], type:"multiple"},
+            {q:"A project manager is initiating a new software development project for a client known for their vague requirements and challenging communication. The previous interactions with this client have often led to misunderstandings about the project scope and deliverables. What strategy should the project manager implement to prevent these issues?",o:["Apply a phased development approach to validate the project scope at each milestone","Collaborate with the product owner to establish a clear minimum viable product (MVP)","Enhance team-client communication protocols to ensure better clarity and feedback","Implement strict deliverable schedules to force clarity in client interactions"],a:1},
+            {q:"In the middle of a software development project following a predictive lifecycle, a significant portion of the software is set for incremental delivery to the client. The experienced team responsible for this portion has expressed a desire to take on more decision-making responsibilities, traditionally handled by the project manager after each delivery. What should the project manager do?",o:["Schedule a meeting with senior management to seek their guidance on adjusting the decision-making process","Support the team's initiative to take on decision-making responsibilities while retaining final approval authority for critical decisions","Maintain the traditional decision-making structure where the project manager oversees all decisions, regardless of the team's readiness","Consult with the project sponsor to explore the option of delegating key post-delivery decisions to the team"],a:1},
+            {q:"On an infrastructure project to upgrade city water systems, the project manager is struggling to finalize the project schedule due to unpredictable regulatory review times and potential delays in securing necessary equipment. What scheduling technique should the project manager adopt to manage the planning effectively under these conditions?",o:["Rolling wave planning","Backward pass analysis","Dependency structuring","Lead and lag optimization"],a:0},
+            {q:"In a major software development project, the project manager finds that several team members are reluctant to use new project management software, believing it to be overly complicated and not beneficial for their tasks. What should the project manager have initially done to facilitate the adoption of the new software by the team?",o:["Encouraged team leaders to use the software in their meetings to set an example for the rest of the team","Implemented a rewards system for early adopters who effectively integrate the new software into their workflow","Conducted one-on-one sessions to understand individual resistances and tailor support accordingly","Organized a comprehensive training session to demonstrate the functionalities and benefits of the new software"],a:3},
+            
+            // Chapter 2: Questions 21-40 (PLACEHOLDER - REPLACE WITH ACTUAL QUESTIONS FROM PDF)
+                {q:"A project manager is leading a software development project using agile methodology. The team is struggling with frequent scope changes from stakeholders. What should the project manager do?",o:["Implement strict change control processes","Facilitate regular stakeholder communication and backlog refinement","Reject all scope changes to maintain project stability","Escalate the issue to senior management"],a:1},
+                {q:"Which of the following are key characteristics of effective project management? (Select all that apply)",o:["Clear communication","Flexible scope","Stakeholder engagement","Fixed timeline","Risk management"],a:[0,2,4], type:"multiple"},
+            {q:"During the planning phase of a construction project, the project manager identifies that the project timeline is too aggressive given the available resources. What is the best approach?",o:["Proceed with the original timeline and work overtime","Request additional resources from management","Revise the project timeline based on realistic resource availability","Cancel the project due to unrealistic expectations"],a:2},
+            {q:"A project team member consistently misses deadlines and delivers substandard work. The project manager has provided feedback multiple times with no improvement. What should be the next step?",o:["Continue providing the same feedback hoping for improvement","Escalate to the team member's direct supervisor","Remove the team member from the project immediately","Provide additional training and mentoring"],a:1},
+            {q:"Which of the following are components of the project management triangle? (Select all that apply)",o:["Scope","Time","Cost","Quality","Risk"],a:[0,1,2], type:"multiple"},
+            {q:"In an IT infrastructure project, a critical server component fails during testing, causing a two-week delay. What should the project manager do first?",o:["Blame the vendor for the component failure","Update the project schedule and communicate the delay to stakeholders","Replace the team member responsible for testing","Continue with other tasks while waiting for the component"],a:1},
+            {q:"A project sponsor requests a detailed status report on project progress. The project manager should provide information about which areas?",o:["Only completed deliverables","Budget, schedule, scope, quality, and risks","Only budget and schedule","Only risks and issues"],a:1},
+            {q:"During a project kickoff meeting, team members express concerns about unclear roles and responsibilities. What should the project manager do?",o:["Ignore the concerns and proceed with the meeting","Create a RACI matrix to clarify roles and responsibilities","Assign roles randomly to team members","Ask the sponsor to define all roles"],a:1},
+            {q:"A project is behind schedule due to resource constraints. The project manager identifies that adding more resources would help but increase costs. What should they do?",o:["Add resources without considering the cost impact","Present the cost-benefit analysis to the sponsor for decision","Continue with current resources and accept the delay","Cancel the project due to resource constraints"],a:1},
+            {q:"During project execution, a team member reports a potential risk that could impact project delivery. What should the project manager do?",o:["Ignore the risk since it's only potential","Document the risk in the risk register and develop mitigation strategies","Wait to see if the risk materializes","Assign the risk to another team member"],a:1},
+            {q:"A stakeholder requests a change that would significantly impact the project scope. What should the project manager do?",o:["Implement the change immediately","Evaluate the impact and follow the change control process","Reject the change without evaluation","Ask the team to vote on the change"],a:1},
+            {q:"The project is approaching its deadline but several deliverables are incomplete. What should the project manager do?",o:["Extend the deadline without stakeholder approval","Communicate the situation to stakeholders and negotiate a realistic timeline","Work the team harder to meet the deadline","Cancel the incomplete deliverables"],a:1},
+            {q:"A project team member is consistently late to meetings and unresponsive to communications. What should the project manager do?",o:["Ignore the behavior and continue as normal","Address the behavior directly with the team member","Remove them from the project immediately","Complain to other team members about the behavior"],a:1},
+            {q:"During project planning, the project manager realizes that the project requires expertise not available in the current team. What should they do?",o:["Proceed with the current team and hope for the best","Identify the skill gap and plan for training or external resources","Cancel the project due to lack of expertise","Ask team members to learn the required skills on their own"],a:1},
+            {q:"A project deliverable fails quality testing and needs to be reworked. This will cause a delay. What should the project manager do?",o:["Accept the deliverable as is to avoid delay","Rework the deliverable and update the project schedule","Blame the quality assurance team","Ignore the quality issue and proceed"],a:1},
+            {q:"The project budget is running low with 30% of the work remaining. What should the project manager do?",o:["Continue spending without concern","Analyze the budget situation and communicate with stakeholders","Stop all project activities","Ask team members to work for free"],a:1},
+            {q:"A key stakeholder is not satisfied with the project progress and threatens to cancel the project. What should the project manager do?",o:["Ignore the stakeholder's concerns","Schedule a meeting to understand concerns and address them","Cancel the project immediately","Complain to other stakeholders about the difficult stakeholder"],a:1},
+            {q:"During project execution, the project manager discovers that a critical assumption was incorrect. What should they do?",o:["Ignore the incorrect assumption","Update the project plan based on the new information","Blame the team for the incorrect assumption","Continue with the original plan"],a:1},
+            {q:"A project team member requests to work remotely due to personal circumstances. What should the project manager do?",o:["Reject the request immediately","Evaluate the impact on the project and make a decision","Allow it without any conditions","Ask other team members to vote on the request"],a:1},
+            {q:"The project is experiencing frequent scope creep from various stakeholders. What should the project manager do?",o:["Accept all scope changes to keep stakeholders happy","Implement a formal change control process","Ignore scope changes and stick to the original plan","Ask the sponsor to handle all scope changes"],a:1},
+            {q:"A project deliverable is completed but doesn't meet the original specifications. What should the project manager do?",o:["Accept the deliverable as is","Rework the deliverable to meet specifications","Blame the team member who created it","Ask the stakeholder to lower their expectations"],a:1},
+            {q:"Which of the following are key processes in project risk management? (Select all that apply)",o:["Risk identification","Risk analysis","Risk response planning","Risk monitoring","Risk elimination"],a:[0,1,2,3], type:"multiple"},
+            {q:"The project is at risk of not meeting its deadline due to external dependencies. What should the project manager do?",o:["Wait for the dependencies to be resolved","Identify alternative approaches or escalate to resolve dependencies","Blame the external parties","Cancel the project due to dependencies"],a:1},
+            
+            // Chapter 3: Questions 41-60 (PLACEHOLDER - REPLACE WITH ACTUAL QUESTIONS FROM PDF)
+            {q:"A project manager is managing a complex software implementation project. The client requests a major change that would require significant rework. What should the project manager do first?",o:["Implement the change immediately to keep the client happy","Analyze the impact on scope, schedule, and budget","Reject the change to maintain project stability","Ask the team to work overtime to accommodate the change"],a:1},
+            {q:"During project execution, the project manager discovers that a critical team member will be unavailable for two weeks. What should they do?",o:["Continue with the project and hope for the best","Identify backup resources or adjust the schedule","Cancel the project due to resource unavailability","Ask the team member to work remotely during their absence"],a:1},
+            {q:"A project is experiencing quality issues with deliverables. The project manager should focus on which area first?",o:["Increasing the project budget","Improving the quality management processes","Hiring additional team members","Extending the project timeline"],a:1},
+            {q:"The project sponsor is concerned about project costs and requests a detailed cost breakdown. What should the project manager provide?",o:["Only the total project cost","A detailed cost breakdown by work package and resource","Only the costs for the current month","A high-level estimate without details"],a:1},
+            {q:"A project team member consistently delivers work that doesn't meet quality standards. What should the project manager do?",o:["Accept the work to avoid conflict","Provide additional training and clear expectations","Remove the team member from the project","Blame the team member publicly"],a:1},
+            {q:"During project planning, the project manager identifies a high-risk activity that could delay the project. What should they do?",o:["Ignore the risk and proceed","Develop a risk response plan and contingency strategies","Remove the activity from the project","Ask the sponsor to handle the risk"],a:1},
+            {q:"A stakeholder requests a status update on a project that is behind schedule. What should the project manager do?",o:["Provide an optimistic update to avoid concerns","Give an honest assessment of the current status and recovery plan","Blame external factors for the delay","Avoid providing any update"],a:1},
+            {q:"The project team is struggling with communication issues and conflicting priorities. What should the project manager do?",o:["Ignore the issues and hope they resolve themselves","Facilitate team meetings to address communication and alignment","Replace the entire team","Ask senior management to intervene"],a:1},
+            {q:"A project deliverable is rejected by the client during acceptance testing. What should the project manager do?",o:["Accept the rejection and move on","Analyze the feedback and develop a plan to address the issues","Blame the client for being too demanding","Ask the team to work harder"],a:1},
+            {q:"The project is running over budget due to unexpected costs. What should the project manager do?",o:["Continue spending without concern","Analyze the cost overrun and communicate with stakeholders","Stop all project activities","Ask team members to work for free"],a:1},
+            {q:"A critical project milestone is at risk of being missed. What should the project manager do?",o:["Ignore the risk and hope for the best","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the project"],a:1},
+            {q:"The project team is experiencing low morale due to long working hours. What should the project manager do?",o:["Ignore the morale issues","Address work-life balance and team well-being","Ask team members to work harder","Replace the team"],a:1},
+            {q:"A project stakeholder is not responding to communication attempts. What should the project manager do?",o:["Stop trying to communicate","Try different communication methods and escalate if necessary","Blame the stakeholder","Cancel the project"],a:1},
+            {q:"The project scope is unclear and stakeholders have different expectations. What should the project manager do?",o:["Proceed with the project as planned","Facilitate scope clarification meetings with stakeholders","Ignore the scope issues","Ask the sponsor to define everything"],a:1},
+            {q:"A project team member is consistently missing deadlines. What should the project manager do?",o:["Ignore the missed deadlines","Address the issue directly and provide support","Remove the team member immediately","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent changes in requirements. What should the project manager do?",o:["Accept all changes without evaluation","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"A project deliverable is completed but the quality is poor. What should the project manager do?",o:["Accept the poor quality deliverable","Rework the deliverable to meet quality standards","Blame the team member","Ask the client to lower expectations"],a:1},
+            {q:"The project is at risk of not meeting its quality objectives. What should the project manager do?",o:["Ignore the quality issues","Review and improve quality management processes","Blame the team","Cancel the project"],a:1},
+            {q:"A project team member is not following the established processes. What should the project manager do?",o:["Ignore the non-compliance","Address the issue and provide training","Remove the team member","Blame the processes"],a:1},
+            {q:"The project is experiencing communication breakdowns between team members. What should the project manager do?",o:["Ignore the communication issues","Facilitate better communication and collaboration","Replace the team","Blame external factors"],a:1},
+            
+            // Chapter 4: Questions 61-80 (PLACEHOLDER - REPLACE WITH ACTUAL QUESTIONS FROM PDF)
+            {q:"A project manager is leading a cross-functional team on a new product development project. The team is struggling with conflicting priorities from different departments. What should the project manager do?",o:["Let each department handle their own priorities","Facilitate alignment meetings to establish common priorities","Ignore the conflicts","Ask senior management to resolve all conflicts"],a:1},
+            {q:"During project execution, the project manager discovers that a critical vendor is unable to deliver on time. What should they do?",o:["Blame the vendor and terminate the contract","Identify alternative vendors or adjust the schedule","Wait for the vendor to resolve their issues","Cancel the project"],a:1},
+            {q:"A project is experiencing scope creep from multiple stakeholders. What should the project manager do?",o:["Accept all scope changes to keep stakeholders happy","Implement a formal change control process","Reject all scope changes","Ask the sponsor to handle all changes"],a:1},
+            {q:"The project team is not meeting their performance targets. What should the project manager do?",o:["Ignore the performance issues","Identify root causes and develop improvement plans","Replace the entire team","Blame external factors"],a:1},
+            {q:"A project deliverable is rejected by the quality assurance team. What should the project manager do?",o:["Override the QA decision","Work with the team to address the quality issues","Blame the QA team","Accept the rejection and move on"],a:1},
+            {q:"The project is running behind schedule due to resource constraints. What should the project manager do?",o:["Continue with current resources and accept delays","Identify additional resources or adjust the schedule","Blame the resource constraints","Cancel the project"],a:1},
+            {q:"A project stakeholder is not satisfied with the project progress. What should the project manager do?",o:["Ignore the stakeholder's concerns","Schedule a meeting to understand and address concerns","Blame external factors","Ask other stakeholders to convince them"],a:1},
+            {q:"The project is experiencing frequent technical issues. What should the project manager do?",o:["Ignore the technical issues","Engage technical experts to resolve the issues","Blame the technical team","Cancel the project"],a:1},
+            {q:"A project team member is not following the project methodology. What should the project manager do?",o:["Ignore the non-compliance","Provide training and reinforce the methodology","Remove the team member","Change the methodology"],a:1},
+            {q:"The project is at risk of not meeting its budget objectives. What should the project manager do?",o:["Continue spending without concern","Analyze costs and implement cost control measures","Blame external factors","Ask for more budget"],a:1},
+            {q:"A project milestone is at risk of being missed. What should the project manager do?",o:["Ignore the risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the milestone"],a:1},
+            {q:"The project team is experiencing low productivity. What should the project manager do?",o:["Ignore the productivity issues","Identify root causes and implement improvement measures","Replace the team","Blame external factors"],a:1},
+            {q:"A project deliverable is not meeting the acceptance criteria. What should the project manager do?",o:["Accept the deliverable as is","Work with the team to meet the acceptance criteria","Blame the acceptance criteria","Ask the stakeholder to lower standards"],a:1},
+            {q:"The project is experiencing communication issues with external stakeholders. What should the project manager do?",o:["Ignore the communication issues","Improve communication processes and stakeholder engagement","Blame the stakeholders","Cancel external communications"],a:1},
+            {q:"A project team member is consistently late to meetings. What should the project manager do?",o:["Ignore the lateness","Address the issue directly with the team member","Remove them from meetings","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent changes in requirements. What should the project manager do?",o:["Accept all changes without evaluation","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"A project deliverable is completed but doesn't meet quality standards. What should the project manager do?",o:["Accept the poor quality deliverable","Rework the deliverable to meet quality standards","Blame the team member","Ask the stakeholder to lower expectations"],a:1},
+            {q:"The project is at risk of not meeting its timeline objectives. What should the project manager do?",o:["Ignore the timeline risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the project"],a:1},
+            {q:"A project team member is not contributing effectively to the project. What should the project manager do?",o:["Ignore the poor contribution","Address the issue and provide support or reassignment","Remove them immediately","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent stakeholder conflicts. What should the project manager do?",o:["Ignore the conflicts","Facilitate conflict resolution and stakeholder alignment","Blame the stakeholders","Cancel the project"],a:1},
+            
+            // Chapter 5: Questions 81-100 (PLACEHOLDER - REPLACE WITH ACTUAL QUESTIONS FROM PDF)
+            {q:"A project manager is leading a software development project with multiple teams across different locations. The teams are struggling with coordination and communication. What should the project manager do?",o:["Ignore the coordination issues","Implement better communication tools and processes","Replace the remote teams","Ask teams to work in the same location"],a:1},
+            {q:"During project execution, the project manager discovers that a critical technology is not working as expected. What should they do?",o:["Blame the technology vendor","Engage technical experts to resolve the issue","Wait for the vendor to fix it","Cancel the project"],a:1},
+            {q:"A project is experiencing frequent scope changes from the client. What should the project manager do?",o:["Accept all changes to keep the client happy","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"The project team is not meeting their quality targets. What should the project manager do?",o:["Ignore the quality issues","Review and improve quality management processes","Replace the team","Blame external factors"],a:1},
+            {q:"A project deliverable is rejected by the client during user acceptance testing. What should the project manager do?",o:["Override the client's decision","Work with the team to address the client's feedback","Blame the client","Accept the rejection and move on"],a:1},
+            {q:"The project is running over budget due to unexpected costs. What should the project manager do?",o:["Continue spending without concern","Analyze the cost overrun and communicate with stakeholders","Stop all project activities","Ask team members to work for free"],a:1},
+            {q:"A project stakeholder is not responding to communication attempts. What should the project manager do?",o:["Stop trying to communicate","Try different communication methods and escalate if necessary","Blame the stakeholder","Cancel the project"],a:1},
+            {q:"The project is experiencing frequent technical issues. What should the project manager do?",o:["Ignore the technical issues","Engage technical experts to resolve the issues","Blame the technical team","Cancel the project"],a:1},
+            {q:"A project team member is not following the project methodology. What should the project manager do?",o:["Ignore the non-compliance","Provide training and reinforce the methodology","Remove the team member","Change the methodology"],a:1},
+            {q:"The project is at risk of not meeting its budget objectives. What should the project manager do?",o:["Continue spending without concern","Analyze costs and implement cost control measures","Blame external factors","Ask for more budget"],a:1},
+            {q:"A project milestone is at risk of being missed. What should the project manager do?",o:["Ignore the risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the milestone"],a:1},
+            {q:"The project team is experiencing low productivity. What should the project manager do?",o:["Ignore the productivity issues","Identify root causes and implement improvement measures","Replace the team","Blame external factors"],a:1},
+            {q:"A project deliverable is not meeting the acceptance criteria. What should the project manager do?",o:["Accept the deliverable as is","Work with the team to meet the acceptance criteria","Blame the acceptance criteria","Ask the stakeholder to lower standards"],a:1},
+            {q:"The project is experiencing communication issues with external stakeholders. What should the project manager do?",o:["Ignore the communication issues","Improve communication processes and stakeholder engagement","Blame the stakeholders","Cancel external communications"],a:1},
+            {q:"A project team member is consistently late to meetings. What should the project manager do?",o:["Ignore the lateness","Address the issue directly with the team member","Remove them from meetings","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent changes in requirements. What should the project manager do?",o:["Accept all changes without evaluation","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"A project deliverable is completed but doesn't meet quality standards. What should the project manager do?",o:["Accept the poor quality deliverable","Rework the deliverable to meet quality standards","Blame the team member","Ask the stakeholder to lower expectations"],a:1},
+            {q:"The project is at risk of not meeting its timeline objectives. What should the project manager do?",o:["Ignore the timeline risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the project"],a:1},
+            {q:"A project team member is not contributing effectively to the project. What should the project manager do?",o:["Ignore the poor contribution","Address the issue and provide support or reassignment","Remove them immediately","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent stakeholder conflicts. What should the project manager do?",o:["Ignore the conflicts","Facilitate conflict resolution and stakeholder alignment","Blame the stakeholders","Cancel the project"],a:1},
+            
+            // Chapter 6: Questions 101-120 (PLACEHOLDER - REPLACE WITH ACTUAL QUESTIONS FROM PDF)
+            {q:"A project manager is leading a complex infrastructure project with multiple vendors and contractors. The coordination between different parties is poor. What should the project manager do?",o:["Ignore the coordination issues","Implement better coordination processes and regular meetings","Replace all vendors","Ask vendors to work independently"],a:1},
+            {q:"During project execution, the project manager discovers that a critical component is not available. What should they do?",o:["Blame the supplier","Identify alternative suppliers or adjust the schedule","Wait for the component to become available","Cancel the project"],a:1},
+            {q:"A project is experiencing frequent scope changes from multiple stakeholders. What should the project manager do?",o:["Accept all changes to keep stakeholders happy","Implement a formal change control process","Reject all changes","Ask the sponsor to handle all changes"],a:1},
+            {q:"The project team is not meeting their performance targets. What should the project manager do?",o:["Ignore the performance issues","Identify root causes and develop improvement plans","Replace the entire team","Blame external factors"],a:1},
+            {q:"A project deliverable is rejected by the quality assurance team. What should the project manager do?",o:["Override the QA decision","Work with the team to address the quality issues","Blame the QA team","Accept the rejection and move on"],a:1},
+            {q:"The project is running behind schedule due to resource constraints. What should the project manager do?",o:["Continue with current resources and accept delays","Identify additional resources or adjust the schedule","Blame the resource constraints","Cancel the project"],a:1},
+            {q:"A project stakeholder is not satisfied with the project progress. What should the project manager do?",o:["Ignore the stakeholder's concerns","Schedule a meeting to understand and address concerns","Blame external factors","Ask other stakeholders to convince them"],a:1},
+            {q:"The project is experiencing frequent technical issues. What should the project manager do?",o:["Ignore the technical issues","Engage technical experts to resolve the issues","Blame the technical team","Cancel the project"],a:1},
+            {q:"A project team member is not following the project methodology. What should the project manager do?",o:["Ignore the non-compliance","Provide training and reinforce the methodology","Remove the team member","Change the methodology"],a:1},
+            {q:"The project is at risk of not meeting its budget objectives. What should the project manager do?",o:["Continue spending without concern","Analyze costs and implement cost control measures","Blame external factors","Ask for more budget"],a:1},
+            {q:"A project milestone is at risk of being missed. What should the project manager do?",o:["Ignore the risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the milestone"],a:1},
+            {q:"The project team is experiencing low productivity. What should the project manager do?",o:["Ignore the productivity issues","Identify root causes and implement improvement measures","Replace the team","Blame external factors"],a:1},
+            {q:"A project deliverable is not meeting the acceptance criteria. What should the project manager do?",o:["Accept the deliverable as is","Work with the team to meet the acceptance criteria","Blame the acceptance criteria","Ask the stakeholder to lower standards"],a:1},
+            {q:"The project is experiencing communication issues with external stakeholders. What should the project manager do?",o:["Ignore the communication issues","Improve communication processes and stakeholder engagement","Blame the stakeholders","Cancel external communications"],a:1},
+            {q:"A project team member is consistently late to meetings. What should the project manager do?",o:["Ignore the lateness","Address the issue directly with the team member","Remove them from meetings","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent changes in requirements. What should the project manager do?",o:["Accept all changes without evaluation","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"A project deliverable is completed but doesn't meet quality standards. What should the project manager do?",o:["Accept the poor quality deliverable","Rework the deliverable to meet quality standards","Blame the team member","Ask the stakeholder to lower expectations"],a:1},
+            {q:"The project is at risk of not meeting its timeline objectives. What should the project manager do?",o:["Ignore the timeline risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the project"],a:1},
+            {q:"A project team member is not contributing effectively to the project. What should the project manager do?",o:["Ignore the poor contribution","Address the issue and provide support or reassignment","Remove them immediately","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent stakeholder conflicts. What should the project manager do?",o:["Ignore the conflicts","Facilitate conflict resolution and stakeholder alignment","Blame the stakeholders","Cancel the project"],a:1},
+            
+            // Chapter 7: Questions 121-140 (PLACEHOLDER - REPLACE WITH ACTUAL QUESTIONS FROM PDF)
+            {q:"A project manager is leading a software development project with multiple teams across different time zones. The teams are struggling with coordination and communication. What should the project manager do?",o:["Ignore the coordination issues","Implement better communication tools and processes","Replace the remote teams","Ask teams to work in the same time zone"],a:1},
+            {q:"During project execution, the project manager discovers that a critical technology is not working as expected. What should they do?",o:["Blame the technology vendor","Engage technical experts to resolve the issue","Wait for the vendor to fix it","Cancel the project"],a:1},
+            {q:"A project is experiencing frequent scope changes from the client. What should the project manager do?",o:["Accept all changes to keep the client happy","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"The project team is not meeting their quality targets. What should the project manager do?",o:["Ignore the quality issues","Review and improve quality management processes","Replace the team","Blame external factors"],a:1},
+            {q:"A project deliverable is rejected by the client during user acceptance testing. What should the project manager do?",o:["Override the client's decision","Work with the team to address the client's feedback","Blame the client","Accept the rejection and move on"],a:1},
+            {q:"The project is running over budget due to unexpected costs. What should the project manager do?",o:["Continue spending without concern","Analyze the cost overrun and communicate with stakeholders","Stop all project activities","Ask team members to work for free"],a:1},
+            {q:"A project stakeholder is not responding to communication attempts. What should the project manager do?",o:["Stop trying to communicate","Try different communication methods and escalate if necessary","Blame the stakeholder","Cancel the project"],a:1},
+            {q:"The project is experiencing frequent technical issues. What should the project manager do?",o:["Ignore the technical issues","Engage technical experts to resolve the issues","Blame the technical team","Cancel the project"],a:1},
+            {q:"A project team member is not following the project methodology. What should the project manager do?",o:["Ignore the non-compliance","Provide training and reinforce the methodology","Remove the team member","Change the methodology"],a:1},
+            {q:"The project is at risk of not meeting its budget objectives. What should the project manager do?",o:["Continue spending without concern","Analyze costs and implement cost control measures","Blame external factors","Ask for more budget"],a:1},
+            {q:"A project milestone is at risk of being missed. What should the project manager do?",o:["Ignore the risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the milestone"],a:1},
+            {q:"The project team is experiencing low productivity. What should the project manager do?",o:["Ignore the productivity issues","Identify root causes and implement improvement measures","Replace the team","Blame external factors"],a:1},
+            {q:"A project deliverable is not meeting the acceptance criteria. What should the project manager do?",o:["Accept the deliverable as is","Work with the team to meet the acceptance criteria","Blame the acceptance criteria","Ask the stakeholder to lower standards"],a:1},
+            {q:"The project is experiencing communication issues with external stakeholders. What should the project manager do?",o:["Ignore the communication issues","Improve communication processes and stakeholder engagement","Blame the stakeholders","Cancel external communications"],a:1},
+            {q:"A project team member is consistently late to meetings. What should the project manager do?",o:["Ignore the lateness","Address the issue directly with the team member","Remove them from meetings","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent changes in requirements. What should the project manager do?",o:["Accept all changes without evaluation","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"A project deliverable is completed but doesn't meet quality standards. What should the project manager do?",o:["Accept the poor quality deliverable","Rework the deliverable to meet quality standards","Blame the team member","Ask the stakeholder to lower expectations"],a:1},
+            {q:"The project is at risk of not meeting its timeline objectives. What should the project manager do?",o:["Ignore the timeline risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the project"],a:1},
+            {q:"A project team member is not contributing effectively to the project. What should the project manager do?",o:["Ignore the poor contribution","Address the issue and provide support or reassignment","Remove them immediately","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent stakeholder conflicts. What should the project manager do?",o:["Ignore the conflicts","Facilitate conflict resolution and stakeholder alignment","Blame the stakeholders","Cancel the project"],a:1},
+            
+            // Chapter 8: Questions 141-160 (PLACEHOLDER - REPLACE WITH ACTUAL QUESTIONS FROM PDF)
+            {q:"A project manager is leading a complex infrastructure project with multiple vendors and contractors. The coordination between different parties is poor. What should the project manager do?",o:["Ignore the coordination issues","Implement better coordination processes and regular meetings","Replace all vendors","Ask vendors to work independently"],a:1},
+            {q:"During project execution, the project manager discovers that a critical component is not available. What should they do?",o:["Blame the supplier","Identify alternative suppliers or adjust the schedule","Wait for the component to become available","Cancel the project"],a:1},
+            {q:"A project is experiencing frequent scope changes from multiple stakeholders. What should the project manager do?",o:["Accept all changes to keep stakeholders happy","Implement a formal change control process","Reject all changes","Ask the sponsor to handle all changes"],a:1},
+            {q:"The project team is not meeting their performance targets. What should the project manager do?",o:["Ignore the performance issues","Identify root causes and develop improvement plans","Replace the entire team","Blame external factors"],a:1},
+            {q:"A project deliverable is rejected by the quality assurance team. What should the project manager do?",o:["Override the QA decision","Work with the team to address the quality issues","Blame the QA team","Accept the rejection and move on"],a:1},
+            {q:"The project is running behind schedule due to resource constraints. What should the project manager do?",o:["Continue with current resources and accept delays","Identify additional resources or adjust the schedule","Blame the resource constraints","Cancel the project"],a:1},
+            {q:"A project stakeholder is not satisfied with the project progress. What should the project manager do?",o:["Ignore the stakeholder's concerns","Schedule a meeting to understand and address concerns","Blame external factors","Ask other stakeholders to convince them"],a:1},
+            {q:"The project is experiencing frequent technical issues. What should the project manager do?",o:["Ignore the technical issues","Engage technical experts to resolve the issues","Blame the technical team","Cancel the project"],a:1},
+            {q:"A project team member is not following the project methodology. What should the project manager do?",o:["Ignore the non-compliance","Provide training and reinforce the methodology","Remove the team member","Change the methodology"],a:1},
+            {q:"The project is at risk of not meeting its budget objectives. What should the project manager do?",o:["Continue spending without concern","Analyze costs and implement cost control measures","Blame external factors","Ask for more budget"],a:1},
+            {q:"A project milestone is at risk of being missed. What should the project manager do?",o:["Ignore the risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the milestone"],a:1},
+            {q:"The project team is experiencing low productivity. What should the project manager do?",o:["Ignore the productivity issues","Identify root causes and implement improvement measures","Replace the team","Blame external factors"],a:1},
+            {q:"A project deliverable is not meeting the acceptance criteria. What should the project manager do?",o:["Accept the deliverable as is","Work with the team to meet the acceptance criteria","Blame the acceptance criteria","Ask the stakeholder to lower standards"],a:1},
+            {q:"The project is experiencing communication issues with external stakeholders. What should the project manager do?",o:["Ignore the communication issues","Improve communication processes and stakeholder engagement","Blame the stakeholders","Cancel external communications"],a:1},
+            {q:"A project team member is consistently late to meetings. What should the project manager do?",o:["Ignore the lateness","Address the issue directly with the team member","Remove them from meetings","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent changes in requirements. What should the project manager do?",o:["Accept all changes without evaluation","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"A project deliverable is completed but doesn't meet quality standards. What should the project manager do?",o:["Accept the poor quality deliverable","Rework the deliverable to meet quality standards","Blame the team member","Ask the stakeholder to lower expectations"],a:1},
+            {q:"The project is at risk of not meeting its timeline objectives. What should the project manager do?",o:["Ignore the timeline risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the project"],a:1},
+            {q:"A project team member is not contributing effectively to the project. What should the project manager do?",o:["Ignore the poor contribution","Address the issue and provide support or reassignment","Remove them immediately","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent stakeholder conflicts. What should the project manager do?",o:["Ignore the conflicts","Facilitate conflict resolution and stakeholder alignment","Blame the stakeholders","Cancel the project"],a:1},
+            
+            // Chapter 9: Questions 161-180 (PLACEHOLDER - REPLACE WITH ACTUAL QUESTIONS FROM PDF)
+            {q:"A project manager is leading a software development project with multiple teams across different time zones. The teams are struggling with coordination and communication. What should the project manager do?",o:["Ignore the coordination issues","Implement better communication tools and processes","Replace the remote teams","Ask teams to work in the same time zone"],a:1},
+            {q:"During project execution, the project manager discovers that a critical technology is not working as expected. What should they do?",o:["Blame the technology vendor","Engage technical experts to resolve the issue","Wait for the vendor to fix it","Cancel the project"],a:1},
+            {q:"A project is experiencing frequent scope changes from the client. What should the project manager do?",o:["Accept all changes to keep the client happy","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"The project team is not meeting their quality targets. What should the project manager do?",o:["Ignore the quality issues","Review and improve quality management processes","Replace the team","Blame external factors"],a:1},
+            {q:"A project deliverable is rejected by the client during user acceptance testing. What should the project manager do?",o:["Override the client's decision","Work with the team to address the client's feedback","Blame the client","Accept the rejection and move on"],a:1},
+            {q:"The project is running over budget due to unexpected costs. What should the project manager do?",o:["Continue spending without concern","Analyze the cost overrun and communicate with stakeholders","Stop all project activities","Ask team members to work for free"],a:1},
+            {q:"A project stakeholder is not responding to communication attempts. What should the project manager do?",o:["Stop trying to communicate","Try different communication methods and escalate if necessary","Blame the stakeholder","Cancel the project"],a:1},
+            {q:"The project is experiencing frequent technical issues. What should the project manager do?",o:["Ignore the technical issues","Engage technical experts to resolve the issues","Blame the technical team","Cancel the project"],a:1},
+            {q:"A project team member is not following the project methodology. What should the project manager do?",o:["Ignore the non-compliance","Provide training and reinforce the methodology","Remove the team member","Change the methodology"],a:1},
+            {q:"The project is at risk of not meeting its budget objectives. What should the project manager do?",o:["Continue spending without concern","Analyze costs and implement cost control measures","Blame external factors","Ask for more budget"],a:1},
+            {q:"A project milestone is at risk of being missed. What should the project manager do?",o:["Ignore the risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the milestone"],a:1},
+            {q:"The project team is experiencing low productivity. What should the project manager do?",o:["Ignore the productivity issues","Identify root causes and implement improvement measures","Replace the team","Blame external factors"],a:1},
+            {q:"A project deliverable is not meeting the acceptance criteria. What should the project manager do?",o:["Accept the deliverable as is","Work with the team to meet the acceptance criteria","Blame the acceptance criteria","Ask the stakeholder to lower standards"],a:1},
+            {q:"The project is experiencing communication issues with external stakeholders. What should the project manager do?",o:["Ignore the communication issues","Improve communication processes and stakeholder engagement","Blame the stakeholders","Cancel external communications"],a:1},
+            {q:"A project team member is consistently late to meetings. What should the project manager do?",o:["Ignore the lateness","Address the issue directly with the team member","Remove them from meetings","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent changes in requirements. What should the project manager do?",o:["Accept all changes without evaluation","Implement a formal change control process","Reject all changes","Ask the team to handle changes"],a:1},
+            {q:"A project deliverable is completed but doesn't meet quality standards. What should the project manager do?",o:["Accept the poor quality deliverable","Rework the deliverable to meet quality standards","Blame the team member","Ask the stakeholder to lower expectations"],a:1},
+            {q:"The project is at risk of not meeting its timeline objectives. What should the project manager do?",o:["Ignore the timeline risk","Develop a recovery plan and communicate with stakeholders","Blame external factors","Cancel the project"],a:1},
+            {q:"A project team member is not contributing effectively to the project. What should the project manager do?",o:["Ignore the poor contribution","Address the issue and provide support or reassignment","Remove them immediately","Blame external factors"],a:1},
+            {q:"The project is experiencing frequent stakeholder conflicts. What should the project manager do?",o:["Ignore the conflicts","Facilitate conflict resolution and stakeholder alignment","Blame the stakeholders","Cancel the project"],a:1}
+        ];
+
+        let currentChapter = 0;
+        let currentQuestion = 0;
+        let userAnswers = [];
+        let chapterQuestions = [];
+        let shuffledQuestions = [];
+        let questionMapping = []; // Maps shuffled questions back to original questions
+        
+        // New features
+        let timeLeft = 0;
+        let timerInterval = null;
+        let questionStartTime = 0;
+        let totalTimeSpent = 0;
+        let scoreHistory = JSON.parse(localStorage.getItem('quizScoreHistory') || '[]');
+        let isDarkMode = localStorage.getItem('quizDarkMode') === 'true';
+        let bookmarkedQuestions = JSON.parse(localStorage.getItem('quizBookmarks') || '[]');
+
+        // Fisher-Yates shuffle algorithm
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        // Shuffle options and update correct answer index
+        function shuffleQuestionOptions(question) {
+            const options = [...question.o];
+            const correctAnswers = Array.isArray(question.a) ? question.a : [question.a];
+            
+            // Shuffle the options
+            const shuffledOptions = shuffleArray(options);
+            
+            // Find new indices of correct answers
+            const newCorrectIndices = correctAnswers.map(originalIndex => {
+                const originalAnswer = options[originalIndex];
+                return shuffledOptions.findIndex(option => option === originalAnswer);
+            });
+            
+            return {
+                ...question,
+                o: shuffledOptions,
+                a: Array.isArray(question.a) ? newCorrectIndices : newCorrectIndices[0]
+            };
+        }
+
+        // Shuffle questions and their options
+        function shuffleChapterQuestions(questions) {
+            // First shuffle the questions
+            const shuffledQuestions = shuffleArray(questions);
+            
+            // Then shuffle options for each question
+            return shuffledQuestions.map(question => shuffleQuestionOptions(question));
+        }
+
+        // Multiple choice support functions
+        function isMultipleChoice(question) {
+            return question.type === "multiple" || Array.isArray(question.a);
+        }
+
+        function getCorrectAnswers(question) {
+            return Array.isArray(question.a) ? question.a : [question.a];
+        }
+
+        function checkMultipleChoiceAnswer(question, userAnswers) {
+            const correctAnswers = getCorrectAnswers(question);
+            const userAnswersArray = Array.isArray(userAnswers) ? userAnswers : [userAnswers];
+            
+            // Check if user selected exactly the right answers
+            if (userAnswersArray.length !== correctAnswers.length) {
+                return false;
+            }
+            
+            // Check if all selected answers are correct
+            return correctAnswers.every(answer => userAnswersArray.includes(answer));
+        }
+
+        function handleMultipleChoice() {
+            const checkboxes = document.querySelectorAll('input[name="answer"]:checked');
+            const selectedAnswers = Array.from(checkboxes).map(cb => parseInt(cb.value));
+            userAnswers[currentQuestion] = selectedAnswers;
+        }
+
+        // Timer functions
+        function startTimer(seconds = 90) {
+            timeLeft = seconds;
+            questionStartTime = Date.now();
+            updateTimerDisplay();
+            
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    autoNextQuestion();
+                }
+            }, 1000);
+        }
+
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+            totalTimeSpent += (Date.now() - questionStartTime) / 1000;
+        }
+
+        function updateTimerDisplay() {
+            const timerElement = document.getElementById('timer');
+            if (timerElement) {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                const timeString = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                timerElement.textContent = `Time: ${timeString}`;
+                
+                if (timeLeft <= 15) {
+                    timerElement.style.color = '#ff4444';
+                } else if (timeLeft <= 30) {
+                    timerElement.style.color = '#ffaa00';
+                } else {
+                    timerElement.style.color = '#667eea';
+                }
+            }
+        }
+
+        function autoNextQuestion() {
+            playSound('timeout');
+            nextQuestion();
+        }
+
+        // Sound effects
+        function playSound(type) {
+            // Create audio context for sound effects
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            switch(type) {
+                case 'correct':
+                    oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
+                    oscillator.frequency.setValueAtTime(1000, audioContext.currentTime + 0.1);
+                    break;
+                case 'incorrect':
+                    oscillator.frequency.setValueAtTime(300, audioContext.currentTime);
+                    oscillator.frequency.setValueAtTime(200, audioContext.currentTime + 0.1);
+                    break;
+                case 'timeout':
+                    oscillator.frequency.setValueAtTime(400, audioContext.currentTime);
+                    break;
+                // case 'click':
+                //     oscillator.frequency.setValueAtTime(600, audioContext.currentTime);
+                //     break;
+            }
+            
+            gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.2);
+        }
+
+        // Dark mode toggle
+        function toggleDarkMode() {
+            isDarkMode = !isDarkMode;
+            localStorage.setItem('quizDarkMode', isDarkMode);
+            applyDarkMode();
+        }
+
+        function applyDarkMode() {
+            document.body.classList.toggle('dark-mode', isDarkMode);
+        }
+
+        // Bookmark functions
+        function toggleBookmark() {
+            const questionId = `${currentChapter}-${currentQuestion}`;
+            const index = bookmarkedQuestions.indexOf(questionId);
+            
+            if (index > -1) {
+                bookmarkedQuestions.splice(index, 1);
+                playSound('click');
+            } else {
+                bookmarkedQuestions.push(questionId);
+                playSound('correct');
+            }
+            
+            localStorage.setItem('quizBookmarks', JSON.stringify(bookmarkedQuestions));
+            updateBookmarkButton();
+        }
+
+        function updateBookmarkButton() {
+            const bookmarkBtn = document.getElementById('bookmarkBtn');
+            if (bookmarkBtn) {
+                const questionId = `${currentChapter}-${currentQuestion}`;
+                const isBookmarked = bookmarkedQuestions.includes(questionId);
+                bookmarkBtn.textContent = isBookmarked ? '★' : '☆';
+                bookmarkBtn.style.color = isBookmarked ? '#ffd700' : '#ccc';
+            }
+        }
+
+        // Statistics functions
+        function showStatistics() {
+            document.getElementById('chapterSelection').classList.add('hidden');
+            document.getElementById('statistics').classList.remove('hidden');
+            displayStatistics();
+        }
+
+        function displayStatistics() {
+            const statsContent = document.getElementById('statsContent');
+            
+            if (scoreHistory.length === 0) {
+                statsContent.innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #666;">
+                        <h3>No statistics yet</h3>
+                        <p>Complete some chapters to see your progress!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const totalAttempts = scoreHistory.length;
+            const totalScore = scoreHistory.reduce((sum, attempt) => sum + attempt.score, 0);
+            const averageScore = (totalScore / totalAttempts).toFixed(1);
+            const bestScore = Math.max(...scoreHistory.map(attempt => attempt.score));
+            const totalTime = scoreHistory.reduce((sum, attempt) => sum + (attempt.timeSpent || 0), 0);
+            const averageTime = (totalTime / totalAttempts / 60).toFixed(1);
+
+            const chapterStats = {};
+            scoreHistory.forEach(attempt => {
+                if (!chapterStats[attempt.chapter]) {
+                    chapterStats[attempt.chapter] = { attempts: 0, totalScore: 0, bestScore: 0 };
+                }
+                chapterStats[attempt.chapter].attempts++;
+                chapterStats[attempt.chapter].totalScore += attempt.score;
+                chapterStats[attempt.chapter].bestScore = Math.max(chapterStats[attempt.chapter].bestScore, attempt.score);
+            });
+
+            let chapterStatsHtml = '';
+            for (let chapter = 1; chapter <= 9; chapter++) {
+                const stats = chapterStats[chapter] || { attempts: 0, totalScore: 0, bestScore: 0 };
+                const avgScore = stats.attempts > 0 ? (stats.totalScore / stats.attempts).toFixed(1) : 0;
+                
+                chapterStatsHtml += `
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.bestScore}/20</div>
+                        <div class="stat-label">Chapter ${chapter} Best</div>
+                        <div style="font-size: 0.9em; color: #888; margin-top: 5px;">
+                            ${stats.attempts} attempt${stats.attempts !== 1 ? 's' : ''} • Avg: ${avgScore}
+                        </div>
+                    </div>
+                `;
+            }
+
+            statsContent.innerHTML = `
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">${totalAttempts}</div>
+                        <div class="stat-label">Total Attempts</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${averageScore}/20</div>
+                        <div class="stat-label">Average Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${bestScore}/20</div>
+                        <div class="stat-label">Best Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${averageTime}m</div>
+                        <div class="stat-label">Avg Time</div>
+                    </div>
+                </div>
+                
+                <h3 style="margin-bottom: 20px; color: #333;">Chapter Performance</h3>
+                <div class="stats-grid">
+                    ${chapterStatsHtml}
+                </div>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <button class="btn btn-secondary" onclick="clearStatistics()" style="margin-right: 10px;">Clear Data</button>
+                    <button class="btn btn-primary" onclick="exportStatistics()">Export Results</button>
+                </div>
+            `;
+        }
+
+        function clearStatistics() {
+            if (confirm('Are you sure you want to clear all statistics? This cannot be undone.')) {
+                scoreHistory = [];
+                bookmarkedQuestions = [];
+                localStorage.removeItem('quizScoreHistory');
+                localStorage.removeItem('quizBookmarks');
+                displayStatistics();
+            }
+        }
+
+        function exportStatistics() {
+            const data = {
+                scoreHistory,
+                bookmarkedQuestions,
+                exportDate: new Date().toISOString()
+            };
+            
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `quiz-statistics-${new Date().toISOString().split('T')[0]}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function initChapters() {
+            const grid = document.getElementById('chapterGrid');
+            const totalChapters = 9;
+            
+            for (let i = 0; i < totalChapters; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'chapter-btn';
+                btn.innerHTML = `
+                    Chapter ${i + 1}
+                    <div class="chapter-info">Questions ${i * 20 + 1}-${i * 20 + 20}</div>
+                `;
+                btn.onclick = () => startChapter(i);
+                grid.appendChild(btn);
+            }
+        }
+
+        function startChapter(chapterIndex) {
+            currentChapter = chapterIndex;
+            currentQuestion = 0;
+            userAnswers = [];
+            totalTimeSpent = 0;
+            
+            const startQ = chapterIndex * 20;
+            const endQ = startQ + 20;
+            const originalQuestions = allQuestions.slice(startQ, endQ);
+            
+            // Shuffle questions and their options
+            shuffledQuestions = shuffleChapterQuestions(originalQuestions);
+            chapterQuestions = shuffledQuestions;
+            
+            document.getElementById('chapterSelection').classList.add('hidden');
+            document.getElementById('quizContent').classList.remove('hidden');
+            document.getElementById('progressBarContainer').style.display = 'block';
+            document.getElementById('headerInfo').textContent = `Chapter ${chapterIndex + 1} - Question 1 of 20`;
+            
+            // Start timer for first question
+            startTimer(90);
+            displayQuestion();
+        }
+
+        function displayQuestion() {
+            const q = chapterQuestions[currentQuestion];
+            const isMultiple = isMultipleChoice(q);
+            
+            document.getElementById('questionNumber').textContent = `Question ${currentQuestion + 1} of 20`;
+            document.getElementById('questionText').textContent = q.q;
+            document.getElementById('headerInfo').textContent = `Chapter ${currentChapter + 1} - Question ${currentQuestion + 1} of 20`;
+            
+            const optionsHtml = q.o.map((option, index) => `
+                <li class="option">
+                    <label>
+                        <input type="${isMultiple ? 'checkbox' : 'radio'}" name="answer" value="${index}" ${isMultiple ? 'onchange="handleMultipleChoice()"' : ''}>
+                        <span class="option-text">${String.fromCharCode(65 + index)}. ${option}</span>
+                    </label>
+                </li>
+            `).join('');
+            
+            document.getElementById('options').innerHTML = optionsHtml;
+            
+            // Clear any previously selected options
+            const inputButtons = document.querySelectorAll('input[name="answer"]');
+            inputButtons.forEach(input => input.checked = false);
+            
+            // Restore user's previous answers
+            if (userAnswers[currentQuestion] !== undefined) {
+                const previousAnswers = Array.isArray(userAnswers[currentQuestion]) ? 
+                    userAnswers[currentQuestion] : [userAnswers[currentQuestion]];
+                previousAnswers.forEach(answerIndex => {
+                    const input = document.querySelector(`input[value="${answerIndex}"]`);
+                    if (input) input.checked = true;
+                });
+            }
+            
+            document.getElementById('prevBtn').disabled = currentQuestion === 0;
+            document.getElementById('nextBtn').textContent = currentQuestion === chapterQuestions.length - 1 ? 'Finish Chapter' : 'Next';
+            
+            // Update bookmark button
+            updateBookmarkButton();
+            
+            // Restart timer for this question
+            stopTimer();
+            startTimer(90);
+            
+            updateProgressBar();
+        }
+
+        function updateProgressBar() {
+            const progress = ((currentQuestion + 1) / chapterQuestions.length) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+        }
+
+        function nextQuestion() {
+            const isMultiple = isMultipleChoice(chapterQuestions[currentQuestion]);
+            
+            if (isMultiple) {
+                // For multiple choice, get all checked checkboxes
+                const checkboxes = document.querySelectorAll('input[name="answer"]:checked');
+                const selectedAnswers = Array.from(checkboxes).map(cb => parseInt(cb.value));
+                userAnswers[currentQuestion] = selectedAnswers;
+            } else {
+                // For single choice, get the selected radio button
+            const selected = document.querySelector('input[name="answer"]:checked');
+            if (selected) {
+                userAnswers[currentQuestion] = parseInt(selected.value);
+                }
+            }
+            
+            stopTimer();
+            
+            if (currentQuestion < chapterQuestions.length - 1) {
+                currentQuestion++;
+                displayQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                displayQuestion();
+            }
+        }
+
+        function showResults() {
+            let score = 0;
+            let resultsHtml = '';
+            
+            chapterQuestions.forEach((q, index) => {
+                const userAnswer = userAnswers[index];
+                const isMultiple = isMultipleChoice(q);
+                const correctAnswers = getCorrectAnswers(q);
+                let isCorrect = false;
+                
+                if (isMultiple) {
+                    isCorrect = checkMultipleChoiceAnswer(q, userAnswer);
+                } else {
+                    isCorrect = userAnswer === correctAnswers[0];
+                }
+                
+                if (isCorrect) {
+                    score++;
+                    playSound('correct');
+                } else {
+                    playSound('incorrect');
+                }
+                
+                // Display correct answers
+                const correctAnswerText = correctAnswers.map(ans => 
+                    `${String.fromCharCode(65 + ans)}. ${q.o[ans]}`
+                ).join(', ');
+                
+                let userAnswerText = 'Not answered';
+                if (userAnswer !== undefined) {
+                    if (isMultiple && Array.isArray(userAnswer)) {
+                        userAnswerText = userAnswer.map(ans => 
+                            `${String.fromCharCode(65 + ans)}. ${q.o[ans]}`
+                        ).join(', ');
+                    } else if (!isMultiple) {
+                        userAnswerText = `${String.fromCharCode(65 + userAnswer)}. ${q.o[userAnswer]}`;
+                    }
+                }
+                
+                resultsHtml += `
+                    <div class="result-item ${isCorrect ? 'correct' : 'incorrect'}">
+                        <div class="result-question">Question ${index + 1}: ${q.q}</div>
+                        <div class="result-answer"><strong>Your answer:</strong> ${userAnswerText}</div>
+                        ${!isCorrect ? `<div class="result-answer"><strong>Correct answer:</strong> ${correctAnswerText}</div>` : ''}
+                    </div>
+                `;
+            });
+            
+            // Save statistics
+            const attempt = {
+                chapter: currentChapter + 1,
+                score: score,
+                totalQuestions: chapterQuestions.length,
+                timeSpent: totalTimeSpent,
+                date: new Date().toISOString(),
+                answers: userAnswers
+            };
+            
+            scoreHistory.push(attempt);
+            localStorage.setItem('quizScoreHistory', JSON.stringify(scoreHistory));
+            
+            document.getElementById('quizContent').classList.add('hidden');
+            document.getElementById('results').classList.remove('hidden');
+            document.getElementById('scoreNumber').textContent = score;
+            document.getElementById('resultDetails').innerHTML = resultsHtml;
+            document.getElementById('headerInfo').textContent = `Chapter ${currentChapter + 1} - Results`;
+            document.getElementById('progressBarContainer').style.display = 'none';
+        }
+
+        function backToChapters() {
+            document.getElementById('chapterSelection').classList.remove('hidden');
+            document.getElementById('quizContent').classList.add('hidden');
+            document.getElementById('results').classList.add('hidden');
+            document.getElementById('statistics').classList.add('hidden');
+            document.getElementById('progressBarContainer').style.display = 'none';
+            document.getElementById('headerInfo').textContent = 'Select a Chapter to Begin';
+            stopTimer();
+        }
+
+        function retryChapter() {
+            // Clear all user answers before restarting
+            userAnswers = [];
+            
+            // Get original questions for this chapter
+            const startQ = currentChapter * 20;
+            const endQ = startQ + 20;
+            const originalQuestions = allQuestions.slice(startQ, endQ);
+            
+            // Reshuffle questions and their options
+            shuffledQuestions = shuffleChapterQuestions(originalQuestions);
+            chapterQuestions = shuffledQuestions;
+            
+            // Hide results and show quiz content
+            document.getElementById('results').classList.add('hidden');
+            document.getElementById('quizContent').classList.remove('hidden');
+            document.getElementById('progressBarContainer').style.display = 'block';
+            
+            // Reset to first question
+            currentQuestion = 0;
+            
+            // Update header
+            document.getElementById('headerInfo').textContent = `Chapter ${currentChapter + 1} - Question 1 of 20`;
+            
+            // Display first question
+            displayQuestion();
+            
+            // Scroll to top of the page
+            window.scrollTo(0, 0);
+        }
+
+        // Initialize the app
+        initChapters();
+        applyDarkMode();
+    </script>
+</body>
+</html>
