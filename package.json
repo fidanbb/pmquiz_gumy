@@ -1,0 +1,20 @@
+{
+  "name": "pmquiz_gumy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "pdf-image": "^2.0.0",
+    "pdf-parse": "^1.1.4",
+    "pdfjs-dist": "^3.11.174",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^24.37.5"
+  }
+}
