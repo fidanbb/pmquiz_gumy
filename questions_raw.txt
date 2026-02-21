@@ -1,0 +1,1700 @@
+
+
+Question 1
+An agile project to develop a new application has just finished its first iteration. To better assess marketing and support needs, the company's management 
+has requested that the project manager provide a date for when the application can be launched.
+What is the best course of action for the project manager?
+A.Provide an accurate estimate based on the velocity of the first iteration
+B.Request time to develop the project schedule baseline
+C.If possible, defer estimating until after a few iterations are completed
+D.Provide a random date just to calm the management down
+
+Question 2
+A project manager is facilitating a sprint retrospective meeting where the team members discuss customer dissatisfaction from the product increment they 
+delivered during the sprint. The discussion reveals some issues with the remote team members who were primarily using email to communicate with the 
+rest of the team.
+What was the most likely cause the product increment did not meet customer expectations?
+A.Failure to respond to changes in scope
+B.Non colocated team members
+C.Delivering working software in each sprint
+D.Demotivated team members
+
+Question3 
+A client completed a walkthrough of the deliverables and formally accepted the work. The next day, the project manager returns to the project site to pick 
+up company equipment and make arrangements for final payment.
+What should the project manager do when meeting the client as part of project closure?
+A.Confirm the final acceptance of the deliverable
+B.Settle procurement claims
+C.Validate the scope objectives have been met
+D.Ensure quality assurance was performed
+
+Question 4 
+You have just been assigned to an upcoming agile project. As part of pre-project work, you review all of the organization's policies and procedures 
+regarding compliance. You realize that only some of them may be applicable to your project.
+What should you do first?
+A.Switch the project management approach from agile to traditional
+B.Incorporate all compliance policies and procedures in the implementation strategy
+C.Ensure compliance activities are included in the project schedule baseline
+D.Classify the compliance categories to determine the expenditure of project resources
+
+Question 5 
+During project execution of a high priority project, a previously identified risk is realized. The project manager sends an email to the risk owner and 
+receives an automated response indicating that this individual will be out of the country on vacation for the next two weeks. The risk owner did not 
+disclose a backup contact to use during the interim.
+What should the project manager do first?
+A.Capture the problem in the issue resolution register
+B.Update the communications management plan
+C.Submit a change request
+D.Record the information in the issue log
+
+Question 6 
+Two days before the end of the last iteration of the project, a project manager has noticed that the performance of one of the developers significantly 
+degraded, risking the iteration goal. The project manager and the developer have a one-on-one coaching meeting scheduled a day after the iteration's end 
+date.
+What is the best course of action for the project manager to take in this situation?
+A.Conduct the individual performance appraisal of the developer
+B.Ask the team to swarm on the tasks assigned to the developer
+C.Employ real-time feedback to address the issue with the developer
+D.Wait for the one-on-one meeting scheduled with the developer
+
+Question 7 
+A project manager is facilitating a retrospective for his first agile project. The team members are frustrated that despite the fact they worked individually 
+and diligently on the tasks assigned to them by the project manager, the project has been completed late and over budget. The team realizes that excessive 
+rework caused the project to miss its objectives.
+What might the project manager have done differently to deliver the project on time and budget?
+A.Increased the work in progress (WIP) limits on the team's Kanban board
+B.Increased the number of developers on the project team
+C.Established a war room for the project team to work collaboratively
+D.Established a more robust change control process
+
+Question 8 
+You are managing a project to develop an e-commerce website. During a review of the functional requirements, the project team realizes the client's 
+quality standards for page load speed had not been met.
+What should you do first?
+A.Escalate the issue to the sponsor to determine next steps.
+B.Evaluate the quality requirements against project deliverables to identify gaps.
+C.Revise the project schedule to allocate more time for testing.
+D.Conduct a lessons-learned session with the team to address the issue.
+
+Question 9 
+A project manager invited several vendors to a pre-bid conference. After a private conversation with one of the vendors who had an inquiry about a new 
+mandatory government requirement, the project manager sent an email to the vendor to address the question. The project manager realizes that the 
+requirement should have been included in the project scope baseline and the statement of work (SOW).
+What should the project manager do in this situation?
+A.No further action is needed as the vendor's question have been addressed
+B.Update the statement of work and the scope baseline, and communicate the changes to all vendors
+C.Update the statement of work and the scope baseline, and hold another pre-bid conference
+D.Update the SOW, submit a change request to update the scope baseline, and communicate the changes to all vendors
+
+Question 10 
+You have been assigned to lead a drug development project for a small pharmaceutical company. The drug development aspect of the project is 
+characterized by a high degree of uncertainty. complexity, and risk. The governmental approval process, on the other hand, is highly structured and well 
+defined.
+What project management approach would you recommend for this project?
+A.Agile for the drug development phase, and predictive for the governmental approval process
+B.Predictive for the drug development phase, and agile for the governmental approval process
+C.Kanban to maximize WIP for compliance activities related to the governmental approval process
+D.Crystal clear for both the drug development phase and the governmental approval process
+
+Question 11 
+With the seventh sprint completed and three more to go, the performing organization establishes a new policy that all project changes must be approved 
+by at least one member of the change control board (CCB). A project manager finds that compliance with the policy will create an impediment to the 
+project's progress.
+What is the project manager’s best course of action?
+A.Submit the change requests after the changes have been implemented to avoid delays
+B.Comply with the new policy but request that the product owner be added as a member of the CCB
+C.Use discretion and only submit change requests that impact the project budget
+D.Adhere to agile best practices and bypass the new change control process
+
+Question 12 
+You are planning a kick-off meeting for your new project. The meeting will communicate the start of the project, key milestones, and other relevant 
+information. Which of the following best describes the objective of this meeting?
+A.Inform and engage stakeholders and gain commitment
+B.Manage threats and opportunities throughout the project
+C.Ensure that the project is completed on schedule and budget
+D.Secure resources required to complete project deliverables
+
+Question 13
+A project manager has taken over a project that has been in execution for a few months. He ran into problems right away. He has had difficulty getting sign 
+off on decisions; he doesn't have the authority to acquire the equipment necessary for the project; the stakeholders and the project team have differing 
+opinions about the objectives and the outcome of the project.
+What is the most likely source of these problems?
+A.Weak leadership skills
+B.Lack of a project charter
+C.Lack of a project management plan
+D.Lack of a procurement management plan
+
+Question 14
+A project manager joined a team that has been working on a project for the last few months. The project manager noticed that the team members were 
+struggling to remove impediments, did not have a discipline around time-boxed events, and were not using information radiators to display the project 
+status.
+What is the best course of action for the project manager to take?
+A.Help the team deal with impediments, remind of the importance of time-boxing, and force the team to use information radiators
+B.Tell the team to deal with impediments, remind of the importance of time-boxing, and suggest the team to use information radiators
+C.Help the team deal with impediments, remind of the importance of time-boxing, and suggest the team to use information radiators
+D.Do nothing, since the issues are minor and can be handled by the team because agile teams are self-managing and self-organizing
+
+Question 15
+On their first day with the company, the new project manager joins the project that has completed several sprints. At the daily scrum, the team spends over 
+an hour arguing about how much unit testing should be completed prior to the start of integration.
+How should the project manager address the issue?
+A.Suggest a compromise for the reasonable amount of unit testing
+B.Take no action since agile teams are self-organizing and self-managing
+C.Going forward, enforce a 15-minute time limit for the daily scrum
+D.Ask the product owner to account for unit testing in the project backlog
+
+Question 16 
+As your project progresses, a team member suggests a minor modification to one of the project deliverables, saying that the modification will improve the 
+overall performance of the final product. You believe that the modification constitutes a minor change to the project scope, schedule, and budget, and 
+should be approved without going to the change control board. 
+What should you do next?
+A.Approve the change request. As the project manager, you should use expert judgment to decide what is best for the project.
+B.Meet with the change control board members individually and try to persuade them to approve the change request.
+C.Submit the change request to the change control board and abide by their decision.
+D.Review the change management plan and follow the established process for processing change requests.
+
+Question 17
+During project planning, the project manager creates the project schedule using a Gantt chart. Three Scrum teams will develop the project deliverables. 
+Due to dependencies, the teams will be required to coordinate their work twice a week using extended standup meetings.
+What should the project manager do next?
+A.Submit a change request to switch the Gantt chart to burndown chart
+B.Include Scrum of Scrums (SoS) meetings in the project schedule
+C.Crash the schedule to eliminate the dependencies between the teams
+D.Reflect the actual velocity of the teams in the project schedule
+
+Question 18
+A project is transitioning to the operations team, and the project manager must outline expectations for the working environment during the knowledge 
+transfer. What should the project manager prioritize in this process?
+A.Conduct informal meetings with minimal structure to share lessons learned.
+B.Ensure a collaborative environment with clear communication and defined roles.
+C.Assign only the project sponsor to review the knowledge transfer process.
+D.Rely solely on the knowledge management system for transfer without team interaction.
+
+Question 19 
+The project manager is 6 months into a multi-million-dollar project. The latest analysis shows a CPI of 1.5 and an SPI of 0.6. What should you do?
+A.Nothing. The analysis shows the project is on budget and on schedule.
+B.Consider crashing the project schedule
+C.Replace one of the higher paid team members with a lower-salaried employee
+D.Inform the customer that you are extending the delivery date for the project
+
+Question 20 
+The project you are leading is supposed to upgrade the application developed by your company on desktop computers and mobile devices. Last week, a 
+major supplier of electronics unexpectedly released a new mobile device. You realize that your application, with a little bit of modification, can run much 
+faster and more securely on the new device. 
+What should you do next in regards to this opportunity?
+A.Create a cost forecast and communicate it to stakeholders
+B.Submit a change request to modify the application
+C.Update project funding requirements in consideration for the unexpected work
+D.Conduct variance analysis for an appropriate reserve amount
+
+Question 21 
+The project management plan and the performance measurement baseline have been approved. As you monitor the project's progress, you realize the 
+approved budget is limiting the project and will affect the targeted completion date. This constraint could affect the company's success in the new venture.
+What is your best course of action?
+A.Use the contingency reserves
+B.Use the management reserves
+C.Cut costs to stay within the budget
+D.Ask for a change in the budget
+
+Question 22 
+You are leading a project in a small startup company with decentralized purchasing. A supplier informs you that they have excess inventory that can be 
+purchased at a reduced price. You review the project's inventory needs and find that most of the excess inventory offered by the supplier can be used for 
+the project.
+What is your best course of action?
+A.Refer the supplier to the project sponsor for procurement
+B.Negotiate and sign a procurement contract with the supplier
+C.Refer the supplier to the procurement department
+D.Refer the supplier to the project management office (PMO)
+
+Question 23 
+A project manager is performing quality assurance for a project to develop a prototype medical device. Given the nature of the project, the quality 
+standards are very stringent. With no known cause, it becomes apparent that the product quality does not meet project requirements.
+What is the best course of action for the project manager to take in this situation?
+A.Direct the project team to improve the quality of their work
+B.Ask the project sponsor what to do
+C.Create an affinity diagram
+D.Develop an Ishikawa diagram
+
+Question 24
+Late in a project, a key team member leaves the company. The project manager realizes that he does not have enough team members to meet the hard 
+deadline. At a weekly status meeting. the project manager discusses several options with his project team, including authorizing additional overtime, hiring 
+subcontractors, or bringing in additional resources from another project team within the company.
+Which resource management technique does the project manager use?
+A.Cost-benefit analysis
+B.Alternatives analysis
+C.Problem solving
+D.Interpersonal skills
+
+Question 25 
+Project stakeholders meet to discuss the threat of a severe staff shortage due to a potential union workers strike that might take place during project 
+execution. With various response strategies on the table, the stakeholders want to make a decision as to how to address the issue should the threat occur.
+What response strategy will the stakeholders be using while deciding to implement one of the following decisions? (Drag and drop the items from right to 
+left.)
+
+Question 26 
+To comply with the customer's contract, the project must use a certified agile practitioner to lead and coach the project team. However, the only certified 
+agile practitioner employed by the company was just assigned to another project. The project manager must now hire an independent contractor to serve 
+as the agile coach, which delays the start of project execution. 
+Which of the following may have helped to avoid the delay in executing the project?
+A.Documenting the potential unavailability of the agile coach in the project assumption log
+B.Using different verbiage in the resource management plan to remove the requirement for an agile coach
+C.Assigning a different team member from the company to serve as the agile coach
+D.Securing the internal agile certified practitioner with a pre-assignment when this requirement was first identified.
+
+Question 27 
+A project team that is experienced in the waterfall project management approach has been assigned to their first agile project. To make the transition 
+easier, it has been decided to keep some elements of the waterfall approach in place. During the iteration review, it was realized that a misunderstanding 
+among the development team has led to a duplication of efforts.
+How might the project manager address this issue?
+A.Bring up the topic during the upcoming iteration retrospective
+B.Do nothing since the team members are transitioning from waterfall to agile
+C.Fallback to a waterfall project management framework going forward
+D.Submit a change request to update the communications management plan
+
+Question 28 
+You are leading a project with a critical time constraint and cannot afford any delays. An argument between two project team members over a minor 
+formatting issue in a report they use to document their testing results turns into a shouting match. The team members draw you into their argument. You 
+realize that resolving the dispute would delay the project timeline. 
+What is your best course of action?
+A.Tell the team members to figure it out for themselves
+B.Look for an approach that would completely satisfy both team members
+C.Request that the team members return to work to avoid any further delays
+D.Select the report format that you think is best and make the decision
+
+Question 29 
+A project is initiated to deliver a solution comprised of several software modules. Each module represents a subset of the total solution and can be 
+developed and released independently. The customer's main focus is on the speed of delivery.
+What is the best delivery strategy for the project manager to employ?
+A.Utilize an incremental project life cycle with multiple deliveries
+B.Employ a predictive approach with a single-phase project
+C.Select a hybrid approach and release all modules in a single delivery
+D.Outsource the development of each module to a different vendor
+
+Question 30
+A project team is installing new workstations across all its office locations. The team notices a lack of communication and coordination, which affects their 
+ability to plan support resources effectively and creates frustration.
+What action should the project manager take first?
+A.Organize a conflict resolution meeting encouraging each team member to discuss concerns and listen to each other's viewpoints.
+B.Suggest a more integrated approach to create a scalable, cost-effective setup.
+C.Address the team, stressing the importance of collaboration and reminding them of their common goal.
+D.Propose regular updates and coordinate meetings, ensuring all team members are kept in the loop.
+
+Question 31 
+A project team will work in a noisy environment requiring hearing protection. To communicate in this type of environment, your employer has a mandatory 
+proprietary instant messaging mobile phone application that will be installed on the phone of every project team member for the duration of the project.
+The requirement to install this messaging application is an example of which of the following?
+A.Pull communication
+B.Push communication
+C.Enterprise environmental factors
+D.Communication model
+
+Question 32 
+As a project manager, you are leading a colocated project team that will create deliverables in an agile fashion, followed by a rollout phase that will use a 
+predictive approach. You are concemed that the transition from agile to waterfall may cause friction within the project team.
+With the development phase complete, how might the team's working agreements need to change in this situation?
+A.The team charter will need to be updated to reflect collective ownership for the completion of project tasks.
+B.The project manager should institute a set of working agreements that worked well on previous waterfall projects.
+C.Each project team member will need to develop their own social contract to support the new framework.
+D.The social contract should reflect a transition from collective to individual ownership for the project tasks.
+
+Question 33 
+A project is plagued by various issues, such as deteriorating team performance, cost and schedule overruns, defective deliverables, etc. The project 
+manager is struggling to monitor and control the work and decides to use some of the data analysis techniques to identify the issues and determine the 
+best course of action.
+How can the project manager use the following techniques to identify the various issues impacting this project? (Drag and drop the items from right to 
+left.)
+
+Question 34 
+A software development project is in planning. The planning is done traditionally, but the product will be developed incrementally. The project manager 
+creates a resource breakdown structure to identify staffing needs, work assignments, and training required for the team members. The project manager 
+assigns hierarchical level 1 to individuals in a leading role. 
+How should the project manager map the resource breakdown structure's entries to the resource breakdown structure's categories? (Drag and drop the 
+items from right to left.)
+
+Question 35 
+After reviewing proposals for a large-scale product development project, vendors X and Y are equally qualified to deliver both the hardware and software. 
+The project manager believes the hardware should be developed with a traditional project management approach, but the software might be better suited 
+to an agile framework.
+What is the best course of action?
+A.Contract with vendor X for hardware, with vendor Y for software and use the appropriate methodology for each
+B.Contract with vendor X for both hardware and software and require an agile framework for the entire project
+C.Contract with vendor Y for both hardware and software and require a waterfall approach for the entire project
+D.Contract with either vendor X or vendor Y for both hardware and software and utilize a master services agreement
+
+Question 36 
+As project execution begins, the project manager acquires the project team and, based on project needs, decides that the team will use Scrum to develop 
+the product of the project. After conducting an assessment of the project team's Scrum skillset, the project manager realizes that according to the Shu-Ha-
+Ri model, the team is at the Shu level.
+What should the project manager recommend to the team?
+A.Request project termination
+B.Modify Scrum to fit the project needs
+C.Develop a new agile method
+D.Closely follow Scrum ceremonies
+
+Question 37 
+A project manager is currently in the process of determining, documenting, and managing stakeholder needs and requirements. Due to the sensitive nature 
+of the project, there is a concern that some stakeholders will not provide candid feedback unless confidentiality is maintained.
+What is the project manager's best course of action?
+A.Conduct interviews to elicit information from stakeholders by talking to them directly
+B.Use brainstorming to generate and collect multiple ideas related to project requirements
+C.Hold a focus group to learn about stakeholder expectations and attitudes about the project
+D.Use multicriteria decision analysis to provide a systematic analytical approach for establishing criteria
+
+Question 38 
+A conflict between the project manager and the team has been going on for a while, negatively impacting the team's morale and jeopardizing the project's 
+goals. To find the appropriate conflict resolution technique, the project manager maps the desire to satisfy the parties' concerns on a chart. Based on the 
+outcome of this mapping exercise, the project manager decides to seek a collaborative solution.
+Given the map below, what letter most likely represents the project manager's decision?
+(On the actual PMP exam, you will be requested to click the correct area in the image. But here, please select the answer below.)
+A.A 
+B.B
+C.C
+D.D
+E.E
+
+Question 39 
+A new app is planned to be completed in 11 iterations. After the fifth iteration, a beta version of the app is released to the market to get early feedback. 
+The project leader wants to engage with the customers to measure overall satisfaction with the product and gauge the customer's loyalty to the brand.
+What is the project leader's best course of action?
+A.Determine the net promoter score (NPS®)
+B.Develop a prioritization schema
+C.Apply the Wideband Delphi technique
+D.Utilize impact mapping
+
+Question 40 
+For the last few iterations, a stakeholder has been approaching the project manager with a suggestion to modify the way the team carries out its 
+development work. According to the stakeholder, the change will save time without affecting the project backlog.
+What action should be taken by the project manager?
+A.Review the suggestion with the team and allow them to determine the best approach
+B.Ask the stakeholder to submit a change request to update the schedule baseline
+C.Reject the suggestion to ensure the team is shielded from stakeholder interruptions
+D.Use the daily standup meeting as a venue to discuss the suggested change
+
+Question 41 
+A team has developed a prototype with a few features of their product. The customer would like to understand a portion of the work. How might the team 
+leverage feedback to allow the customer to see a finished piece of the work?
+A.Delay the product launch until all the known and unknown feature requirements are understood, then share that with the customer.
+B.Release a product with a mix of several features necessary for the initial user validation.
+C.Focus solely on delivering all planned features without considering user feedback.
+D.Let the team provide the customer with a feature that might help with any needed changes before delivering the final product.
+
+Question 42 
+Up until now, your project team has allowed the use of flextime where project team members may take time off during regular business hours and make 
+up the time during the evening hours or weekends. Recently, excessive use of flextime has become a roadblock as some team members are not available 
+when needed. The team feels they should set a standard that flextime is only to be used for personal emergencies.
+How should you handle this situation?
+A.Contact the human resources department to update the corporate policies to prohibit flextime
+B.Submit a change request to update the team charter based on the team's inputs
+C.Discuss the issue with the team and update the team charter accordingly
+D.Do nothing as the team has already agreed to use flextime for personal emergencies only
+
+Question 43 
+A project manager has developed the following earned value analysis chart for a software development project. 
+Based on the current trend, what action should the project manager take immediately?
+A.Submit a change request to increase funding for the project
+B.Look for options to reduce costs and improve schedule performance to 
+meet project objectives
+C.No immediate action is required in this case
+D.Crash the schedule to bring it back into alignment with project 
+objectives
+
+Question 44 
+A project has to procure goods and services from a seller. Some aspects of the procurement are well-defined up-front while others will be known only after 
+initial deliverables are validated and accepted.
+What contracting technique would work best for this procurement?
+A.Multi-tiered structure
+B.Cost plus award fee
+C.Procurement audit
+D.Request for quotation
+
+Question 45 
+A project requires ongoing stakeholder engagement and needs to respond to high levels of change. The project manager selects a hybrid life cycle for the 
+project and prioritizes the work items in a backlog. At the beginning of each iteration, the team determines how many backlog items they can deliver.
+Which project management process(es) will the project team need to repeat with each iteration?
+A.Processes are not performed on a hybrid project
+B.Collect Requirements and Create WBS
+C.Identify Stakeholders and Close Project or Phase
+D.Collect Requirements and Define Scope
+
+Question 46 
+You are the project manager for the initial design phase of a new ergonomic pen. You have conducted multiple interviews with pen users and have tested 
+various design concepts. Your most recent design has been verified and accepted by key stakeholders. The pen design is ready to transition to the team 
+managing the next phase.
+Which of the following should you consult to find out who will take ownership of the pen design?
+A.The project management plan
+B.The final report
+C.The scope statement
+D.The communications management plan
+
+Question 47 
+During a negotiation with a key stakeholder, the project manager realizes that the stakeholder's primary objective conflicts with the project's constraints. 
+How should the project manager proceed to resolve this issue?
+A.Propose alternative solutions that align with the project's constraints while partially addressing the stakeholder's objective.
+B.Prioritize the stakeholder's objective over the project constraints to maintain the relationship.
+C.End the negotiation and escalate the issue to the project sponsor for resolution.
+D.Accept the stakeholder's demands and revise the project plan accordingly.
+
+Question 48 
+A project manager is implementing the quality management plan for a project to construct a natural gas pipeline. During this process, an internal audit 
+discovers that while the project meets all applicable government regulations, there is a discrepancy with ISO 9000 criteria.
+Which tailoring consideration did the project manager most likely neglect earlier in the project?
+A.Continuous improvement
+B.Standards and regulatory compliance
+C.Project life cycle
+D.Since the project meets all applicable govemment regulations, nothing was missed earlier in the project
+
+Question 49 
+The quality management has been perfect for the project up to this point. Suddenly, the quality assurance (QA) lead who developed and performed most 
+of the quality activities for the project has been temporarily reassigned to help another project.
+What should the project manager do?
+A.Submit a change request to adjust the cost baseline and the schedule baseline
+B.Request the team to develop replacement quality activities
+C.Assign another team member to carry out the originally planned quality activities
+D.Pause quality activities until the QA lead returns to the project
+
+Question 50 
+The deliverables of a two-year-long project have just been accepted. It is four months late, but the customer is pleased to have it. The project manager is 
+glad to be done with the deliverables but is concerned about the cost and schedule overruns. He decides to re-run the initial cost-benefit analysis using the 
+actual project costs.
+Where should the project manager obtain the initial cost-benefit analysis?
+A.From the customer
+B.The project charter
+C.The business case
+D.The benefits management plan
+
+Question 51 
+Which leadership behavior is emphasized in an agile environment compared to projects carried out using a traditional project management approach?
+A.Enabling team members to act
+B.Solving problems for the team
+C.Creating working agreements
+D.Handling uncertainties and risks
+
+Question 52 
+You are leading a project with two dispersed development teams. One team is using traditional waterfall methods, and the other is using XP for product 
+development. Budgetary constraints prevent any of the team members from being colocated.
+What should you prioritize for team collaboration?
+A.Documenting collaboration requirements of the XP team in the communications management plan
+B.Setting up remate pairing for the XP team and providing video conferencing capabilities for both teams
+C.Allocating dedicated portions of the offices to support the caves and common practice for both teams
+D.No specific considerations are required as both teams can learn to collaborate as they do their job
+
+Question 53 
+An agile team is trying to determine the ideal iteration length. The team members are having a long and intense argument about it, but no one is willing to 
+compromise. The project manager is called in to help resolve the conflict.
+What is the best course of action for a project manager?
+A.Avoid being involved in the process and let the team work out toward a consensus
+B.Recommend evaluating the pros and cons of each one of the suggested iteration lengths
+C.Threaten the team with disciplinary actions if they are unable to come to an agreement
+D.Break the impasse by making the decision for the team before relationships are damaged
+
+Question 54 
+You are leading a project that was supposed to be managed using agile methods. Every week, however, the product owner holds a five-hour backlog 
+refinement meeting with the project team where she presents the project scope broken down to the work package level. After three iterations, the project 
+team's velocity is slower than expected.
+What is your best course of action?
+A.Ask the product owner to decompose the scope down to the task level and assign the tasks to the team members
+B.Advise the product owner to hold two five-hour backlog refinement meetings per week to gain further clarity on the scope
+C.Coach the product owner on presenting the overall story concept with one-hour weekly backlog refinement meetings
+D.Hold a team-building exercise with the team members and product owner to improve the communication between them
+
+Question 55 
+The project charter has just been approved, and a scrum team has been assigned to the project. The project manager wants to ensure the appropriate 
+quality of the project deliverables. 
+Of the following, which should the project manager do first?
+A.Determine the acceptance criteria by reviewing the detailed requirements outlined in the project charter
+B.Create a work breakdown structure (WBS) by decomposing the work down to the work package level
+C.Conduct a requirements gathering meeting with relevant stakeholders and determine acceptance criteria
+D.Develop a graphical representation of the logical relationships among the various project activities
+
+Question 56 
+After completing an iteration, an agile team is planning to hold an iteration review meeting to demonstrate the new product increment developed during 
+the iteration. To ensure that relevant stakeholders are invited, the team is classifying all project stakeholders according to the type of requirements the 
+stakeholders are likely to be interested in during the demo.
+How should the team classify the stakeholders with regard to their requirements? (Drag and drop the items from right to left.)
+
+Question 57 
+You are acquiring the necessary resources for your project. The organization where you are employed is an international company with locations in several 
+countries. With personnel located around the globe, you will be forming your project team as a virtual team, and the team members will be allowed to 
+work from their home offices.
+What special considerations do you need to take into account while working with your team?
+A.Project expenses
+B.Communication planning
+C.Pre-assigned team members
+D.Team members with disabilities or mobility issues
+
+Question 58 
+You are leading a project to develop a product that will be sold through an existing nationwide dealer network. The product will be built incrementally by a 
+virtual team, while the dealer training and product rollout processes will be well-defined upfront. You want the dealers to provide the team with regular 
+feedback throughout product development.
+What is the best strategy to achieve your goal?
+A.Suggest that the dealers attend the biweekly iteration retrospective meetings
+B.Collect requirements upfront and develop a detailed WBS for product development
+C.Invite the dealers to attend product demonstrations via video conference
+D.Colocate the dealers with some of the developers for the duration of the project
+
+Question 59 
+To develop the product, the project will use new and evolving technology. The work items in the backlog have been estimated and prioritized. After 
+completing several sprints, the team has been asked to re-estimate the remaining items in the backlog.
+How will the range, accuracy, and confidence of the estimates change?
+A.Wider range, greater accuracy, higher confidence
+B.Narrower range, poorer accuracy, lower confidence
+C.Same range, same accuracy, same confidence
+D.Narrower range, greater accuracy, similar confidence
+
+Question 60 
+A project manager is determining the budget for a software development project where the product will be built incrementally. Since the project is subject 
+to a strict budget, the project manager has to ensure that scope and schedule baselines stay within cost constraints. The project manager includes 
+budgetary requirements in the release plan.
+How can the information in the release plan help the project manager with managing the project budget?
+A.The release plan can become a part of the cost management plan.
+B.The velocity can be increased for the project to stay within budget constraints.
+C.Release burndown charts can be updated with cost trend lines.
+D.Review meetings with stakeholders can be used to discuss the scope and schedule.
+
+Question 61 
+A project manager has just received a signed formalized document as an output from one of the initiation processes in her project. This document was 
+prepared by someone external to the project and will be utilized as a catalyst for the project to move forward.
+Which of the following describes this document?
+A.The business case
+B.The scope statement
+C.The project charter
+D.The approved project plan
+
+Question 62
+A company operating in a high-tech industry with new technologies emerging every few months charters a project that is expected to have unstable 
+requirements for its whole duration. A project manager is assigned, and the sponsor requests the project manager to suggest a strategy that best supports 
+the adaptability and resiliency of the project in this environment.
+Which of the following capabilities should the project leader leverage for this strategy?
+A.Expediting decision making to occur at the first possible moment
+B.Acquiring project team members with a highly specialized set of skills
+C.Limiting the exposure to tacit knowledge and leveraging explicit knowledge
+D.Incorporating short feedback loops to adapt the product and process quickly
+
+Question 63 
+Planning is underway for a project to develop a new online collaboration tool. The team will use the eXtreme Programming (XP) method to develop the 
+tool, while the deployment to the customers will be managed using a waterfall approach. The project manager wants to gather early customer feedback on 
+a working tool to ensure it's aligned with the product vision. 
+What is the best course of action?
+A.Develop the complete set of features and showcase it at a developer's conference
+B.Create a wireframe for the public to use and provide feedback
+C.Plan for the development of an MVP for a release to a subset of customers
+D.Perform decomposition to create the work breakdown structure
+
+Question 64 
+An agile software development project consists of four releases, with features incrementally added with each release. Due to an excessive number of 
+defects found by users after the first release, the risk response plan was implemented, which involved more rigorous testing by the project team. After the 
+second release, the client has reported two bugs.
+What must first be done to determine the effectiveness of the implemented risk response?
+A.Schedule a release retrospective
+B.Complete a sensitivity analysis
+C.Conduct technical performance analysis
+D.Perform a reserve analysis
+
+Question 65 
+You meet with your team to determine the life cycle for your project. After analyzing the best way to define and manage requirements, develop 
+deliverables, handle changes, control risk and cost, and engage key stakeholders, the decision is made to select a hybrid life cycle.
+With the project life cycle selected, how will the requirements be managed on your project?
+A.Defined during the transition to the customer
+B.Elaborated at periodic intervals during delivery
+C.Defined up-front before development begins
+D.Elaborated as often as needed during delivery
+
+Question 66 
+A project manager is reviewing a document where information about problems impacting project performance is recorded and monitored. According to 
+the document, a new problem that was logged yesterday by a project team member indicates that delays have just exceeded the established schedule 
+variance threshold and corrective action is required. No additional details about the new problem are provided in the document.
+What should the project manager do immediately?
+A.Assign a responsible party to follow up on the problem
+B.Record the disposition of the change request
+C.Send the project progress report to the stakeholders
+D.Update the lessons learned register
+
+Question 67 
+A project manager is leading an agile research and development project. The project team is using a diagram, which breaks down the causes of an 
+identified problem into discrete branches to determine the main cause of the problem.
+Which diagram might the project team be using in this situation?
+A.Pareto diagram
+B.Matrix diagram
+C.Tornado diagram
+D.D Why-why diagram
+
+Question 68 
+A project manager is drafting a charter for a software development project and just scheduled a brainstorming meeting to gather relevant information. 
+Which of the following activities is the project manager least likely to conduct?
+A.Inviting relevant stakeholders to attend the meeting
+B.Ensuring that a software engineer joins the meeting
+C.Arranging for a facilitator to lead the meeting
+D.Following the communications management plan to determine meeting attendees
+
+Question 69 
+A new developer joins the project. However, her productivity is limited since she lacks the competency in one of the programming languages. This language 
+is not only used on this project but will also be required on future projects. Training costs were not included in the project budget, and the project CPI is 
+0.75. 
+What is the best course of action for the project manager?
+A.Submit a change request to update the development approach
+B.Seek approval for the performing organization to absorb the training costs
+C.Stop using this programming language on this project
+D.Terminate the employment of the new developer and find a replacement
+
+Question 70 
+A new program consists of five projects, each performed by a scrum team. Throughout the program life cycle, various deliverables from each of the scrum 
+teams will serve as inputs to other teams.
+What is the best strategy for each of the project managers to navigate this complexity?
+A.Seek the program manager's approval of the deliverables before they move from one team to another
+B.Apply systems thinking throughout the project life cycle
+C.Request that the product owner prioritizes the least complex user stories in the program backlog
+D.Enhance simplicity by minimizing the amount of work not done
+
+Question 71
+As a project manager, you are facilitating a retrospective for a sprint that failed to meet all of its objectives. Members of the development team and the 
+product owner are arguing over who is responsible for the failure. After performing a root cause analysis, you uncover the source of the conflict.
+Of the following, what did you most likely discover?
+A.The product owner determined how many user stories were to be completed during the sprint
+B.The development team decided how many user stories were to be completed during the sprint
+C.You, as the project manager, failed to assign user stories to the development team
+D.The Gantt chart did not include enough story paints
+
+Question 72 
+During the development of the stakeholder engagement plan, the project manager realizes that a key stakeholder is resistant to the project. Without the 
+support of this stakeholder, the project may fail.
+What is the best course of action for the project manager to identify the reason for the stakeholder being resistant?
+A.Escalate to the project sponsor
+B.Update the stakeholder register
+C.Use the mind mapping technique
+D.Utilize an Ishikawa diagram
+
+Question 73 
+An organization wants to undertake its first agile project that will incorporate scrum methods. A project manager is advising the organization on how to 
+transition from a predictive framework to scrum. The recently hired developers are all well-versed with agile practices, but the broader internal stakeholder 
+community is unfamiliar with scrum.
+How might the project manager address this knowledge gap?
+A.No action is needed because the developers are all well-versed with scrum
+B.Have the stakeholders attend the daily scrum meetings and ask questions about scrum
+C.Conduct a seminar with relevant stakeholders covering scrum at a high-level
+D.Submit a change request to access contingency reserves to cover scrum training costs
+
+Question 74 
+You are leading a meeting with the project sponsor and key stakeholders to review the recently completed project management plan. The goal of the 
+meeting is to establish a common understanding of the plan, answer any questions or concerns, and gain formal approval of the project management plan.
+Which of the following interpersonal and team skills is the least beneficial to the project manager to use to achieve the meeting's goal?
+A.Conflict management
+B.Facilitation
+C.Meeting management
+D.Team building
+
+Question 75 
+During the current sprint, the product owner's availability has been limited due to other commitments. At the daily standup, the team members complain 
+that they cannot get answers from the product owner, and, as a result, the development of the product increment is delayed.
+What is the best course of action for project manager?
+A.Let the senior developers make the product decisions
+B.Contact the product owner on behalf of the team members
+C.Mention the availability issue during the sprint review
+D.Discuss the availability issue at the sprint retrospective
+
+Question 76 
+You have been requested to fill in for a project manager who has called in sick. As you get yourself familiar with the project team, you notice that the team 
+members do not collaborate well, and there are a lot of disagreements and conflicts going on. You feel that the overall environment is counterproductive.
+Based on your observations, where is the team on the Tuckman ladder?
+(On the actual PMP exam, you will be requested to click the correct area in the image. But here, please select the answer below.)
+A.A
+B.B
+C.C
+D.D
+E.E
+
+Question 77 
+An organization is about to undertake three complex agile projects (scrum) that will have interdependencies between them. Each project has a team 
+consisting of six members and is led by a project manager. The projects are part of a bigger program.
+What is the best strategy for the program manager to coordinate the work between the projects?
+A.Suggest that the project managers establish a scrum of scrums between the projects
+B.Allow the project teams to work independently to expedite the delivery of value
+C.Combine the project teams into one large scrum team led by a project manager
+D.Ensure that all project activities are scheduled during initial project planning
+
+Question 78 
+A project manager is estimating the length of time the project will take. The project manager worked on a comparable project two years ago that installed 
+10 miles of guardrails at a rate of one mile a day in similar weather conditions, using the same size crew on the same type of highway.
+What estimating technique would be the appropriate option for the project manager to use for his duration estimate?
+A.Parametric estimating
+B.Analogous estimating
+C.Bottom-up estimating
+D.Three-point estimating
+
+Question 79 
+A project manager is considering a change with how costs are controlled on her project. Instead of submitting budget change requests to the CCB, she 
+wants to invite stakeholders to the parking lot portion of the daily standups and discuss requested changes there. The project manager meets with the 
+stakeholders to propose the process change.
+Which of the following arguments would least likely to convince the stakeholders of the benefits of the new process?
+A.The cost management and change management plans will be updated to reflect the new process.
+B.Earned value analysis data from a previous project will be compared to iterative data accumulation.
+C.Only those budget change requests that do not affect the project cost baseline will be discussed.
+D.Other project managers in the organization going through similar process changes will be consulted.
+
+Question 80 
+As you perform quality assurance for a project to develop a new autopilot feature for a vehicle, you have created the diagram below, which compares the 
+vehicle speed with uncommanded lane departures.
+What can be said about this diagram?
+A.Affinity diagram, which shows a weak correlation between the speed 
+and lane departures
+B.Scatter diagram, which shows a strong correlation between the speed 
+and lane departures
+C.Affinity diagram, which shows a strong correlation between the speed 
+and lane departures 
+D.Scatter diagram, which shows a weak correlation between the speed and 
+lane departures
+
+Question 81 
+You are leading a hybrid project with an agile team developing the web application and a traditional engineering team designing the servers that will host 
+the application. You want to determine what your company says about the use of social media tools to communicate and work with the stakeholders to 
+meet their needs and expectations.
+What is your best course of action?
+A.Review the stakeholder register
+B.Check the organizational process assets
+C.Consult with the project sponsor
+D.Check the lessons learned repository
+
+Question 82 
+The plan for the first iteration was to complete 80 story points. However, the team was only able to complete 60. Each story point earns $1,000 for the 
+project. The actual cost of the iteration was $70,000. As the iteration retrospective approaches, the scrum master requests that the team prepares all the 
+data required to calculate the various earned value metrics. 
+At the retrospective, the team determines that the schedule performance index (SPI) of the iteration was __________
+(On the actual PMP exam, you will be requested to fill in the blank with the letter representing the correct answer. But here, please select the answer 
+below.)
+A.1.333
+B.0.750
+C.1.143
+D.0.857
+
+Question 83 
+You are leading a complex project with a schedule baseline that cannot be modified due to external constraints. The scope, however, is flexible. The project 
+deliverables are produced by three development teams that work independently from one another. The teams manage their workflow using Kanban.
+Which of the following is the most effective tool for you to use to measure the project's progress?
+A.Feature chart
+B.Burndown chart
+C.Burnup chart
+D.Cumulative flow diagram
+
+Question 84 
+Your project team functions as a well-organized unit. The team members are interdependent and work through issues smoothly and effectively. 
+What is your best course of action?
+A.Provide clear direction on the project objectives and the behavior expected from the team members
+B.Help the team to get through their struggle by ensuring they listen to each other and understand their differences
+C.Ensure the team resolves conflicts quickly and continues to work collaboratively and step in only when needed
+D.Serve as a gateway between the project team and the stakeholders and delegate decision making to the team members
+
+Question 85 
+A project team is using the Stacey Complexity Model to evaluate the degree of uncertainty in the project and select the appropriate project life cycle. The 
+team maps the technical degree of uncertainty on the horizontal axis and requirements' uncertainty on the vertical axis. The resulting mapping suggests 
+that a predictive life cycle would work best for this project.
+Where on the Stacey Complexity Model did the team most likely map the project?
+(On the actual PMP exam, you will be requested to click the correct area in the image. But here, please select the answer below.)
+A.A
+B.B
+C.C
+D.D
+
+Question 86 
+Development team members argue with the product owner who rejected a deliverable the team developed during the recent iteration. The project 
+manager schedules a meeting with the team, product owner, and other relevant stakeholders to break down the situation and identify the root cause of a 
+misunderstanding.
+Which of the following will be considered an antipattern if used during the meeting?
+A.Drawing a fishbone diagram
+B.Using the five whys method
+C.Maximizing the number of action items
+D.Defining the problem statement
+
+Question 87 
+You have been assigned to lead an initiative for which the business case has not been sufficiently made to get approval to initiate a hybrid project. In some 
+of the past projects, teams realized too late into project execution that no one in the company had the skills needed to build some of the features, so it was 
+developed by a contractor, resulting in cost overruns.
+What would you do differently in your assignment to avoid cost overruns?
+A.Start with a proof of concept
+B.Use burndown charts for reporting
+C.Develop a project charter
+D.Encourage tearn knowledge sharing
+
+Question 88 
+While reviewing a project's progress, the project manager discovers inconsistencies between the project management plan and the project's actual 
+performance. She now needs to determine corrective actions to minimize the impact of the inconsistencies on the project.
+In what project document would she have documented the inconsistencies and would look at to review them?
+A.Stakeholder register
+B.Change log
+C.Assumption log
+D.Issue log
+
+Question 89 
+You are leading an off-grid housing construction project. Each of the ten homes in the development will have solar shingles to generate energy and a novel 
+energy storage system. The performing organization is highly experienced with traditional construction methods, but this is their first project to incorporate 
+energy generation and storage.
+How might you best support continuous improvement efforts throughout the project?
+A.Construct the homes sequentially using a predictive model and hold a retrospective after the completion of each home
+B.Review the lessons learned repository during project planning and apply the knowledge gained during project execution
+C.Build all of the homes concurrently using a predictive approach and update the lessons learned register continuously
+D.Utilize an incremental project management approach for the development of the homes and hold a project retrospective
+
+Question 90 
+A project team is developing an e-commerce tool that includes an online store, payment system, client chat feature, and mobile application. The team must 
+ensure this is thoroughly planned and developed based on continuous feedback and evolving requirements.
+What would the team consider next after the high-level requirements and scope have been determined?
+A.Develop prototypes of the online store to visualize the layout and functionality of the tool.
+B.Set up each phase's initial milestones and deliverables and determine the feature development priority.
+C.Begin the development sprints that kick off the process of coding the online store.
+D.Revise and update the project plan based on the feedback received during development.
+
+Question 91 
+A senior executive suggests initiating a project to replace a significant portion of the company's labor force with an automated production line. Other 
+company executives are skeptical that this approach is the best way to increase profit margins and wonder if they are ready to sponsor such an effort.
+What is the first thing that should be done in this scenario?
+A.Performing a needs assessment
+B.Consulting with the project management office
+C.Appointing a project sponsor to create a project charter
+D.Providing a project manager with the authority to apply organizational resources
+
+Question 92 
+Gold plating had been an issue with your current software development project. However, you found that ever since instituting daily stand-up meetings, no 
+more features or functionalities that the customer did not request have been introduced into the project.
+What is your best course of action to prevent gold plating for the remainder of the current project and on future projects?
+A.Bring up the topic during the project retrospective
+B.Capture the best practice in the lessons learned register
+C.Gold plating adds customer value and should not be prevented
+D.Ensure that the scope management plan includes daily stand-up meetings
+
+Question 93 
+It has been decided that the project will be managed using waterfall. However, due to ambiguous requirements, the software will be developed in short 
+iterations using Scrum. After acquiring a team from within the organization, the project manager realizes that the organization lacks technical expertise in 
+several key areas and will require external resources from a vendor. The organization, however, wants to preserve its strategic discretion on the work 
+performed.
+What is the best contracting technique for the project manager to maximize collaboration with the vendor?
+A.Team augmentation
+B.Early cancellation option
+C.Fixed-price increments
+D.Not-to-exceed time and materials
+
+Question 94 
+A project manager is assigned to an agile software development project for a large banking corporation. With the project just getting underway, the project 
+manager has learned about new hacking tactics that present a potential threat to regulatory compliance for the project.
+What should the project manager do next?
+A.Review the risks during the project retrospective
+B.Analyze the consequences of non-compliance
+C.Submit a change request to update the risk management plan
+D.Develop a cumulative flow diagram
+
+Question 95 
+A PMO steeped in traditional waterfall project management has hired you, as a project manager, to guide the organization's transformation to agile. After 
+completing an initial assessment of the organizational culture, you have realized that many of the stakeholders are resistant to the change.
+What is your best course of action?
+A.Provide training to ensure the employees are more highly specialized
+B.Transition all projects to agile at the same time
+C.Seek a high-level executive willing to champion the cause
+D.Ensure the work is decomposed into silos
+
+Question 96 
+You are managing a project to launch a new product. During a project review meeting, the stakeholders requested faster value delivery. To align with this 
+goal, the team proposes breaking the project into smaller deliverables.
+What should you do next?
+A.Approve the smaller deliverables and schedule immediate delivery.
+B.Assess opportunities to deliver incremental value while aligning with project objectives.
+C.Escalate the stakeholder request to the sponsor for approval.
+D.Maintain the original scope to ensure completeness before delivery.
+
+Question 97 
+Your project is running behind schedule. To bring the timeline back into alignment with the project management plan, you need some of your project team 
+members to work extra hours. In order to motivate your team, you offer each team member two tickets to a popular sporting event if they work a weekend 
+shift.
+What type of power are you using in this situation?
+A.Managerial
+B.Charismatic
+C.Persuasive
+D.Reward-oriented
+
+Question 98 
+Near the end of an iteration, the project team is ready to lead a product review with the product manager. What is the objective of the review?
+A.Validate the product scope
+B.Manage product quality
+C.Control the product scope
+D.Close the project or phase
+
+Question 99 
+A project produces a functional deliverable at the end of each iteration. The team holds an iteration review where the deliverable is demonstrated to the 
+relevant stakeholders. After the demonstration, the product owner, in collaboration with the team, prioritizes the items in the project backlog for the next 
+iteration.
+What development approach is described in the scenario and what, if any, step is missing?
+A.Predictive; sponsor approves the deliverable.
+B.Adaptive; stakeholders provide feedback.
+C.Hybrid; team holds an iteration retrospective.
+D.Adaptive; no steps are missing.
+
+Question 100 
+In their first iteration, an agile team completed only half of the planned work. It turns out that before the current project began, the team members were 
+requested to provide ongoing support for the prior release. Angry project stakeholders meet with the project manager and complain that supporting prior 
+releases should have never been included in the project plans. 
+How should the project manager respond?
+A.Agree with the stakeholders and remove all further support work from the next iterations
+B.Ignore the stakeholders' complain and instruct the team to continue supporting the prior releases
+C.Explain that routine work of supporting prior releases may be included in project plans
+D.Request that from now on the team work overtime to complete both the planned work and support
+
+Question 101 
+You are managing a virtual project team across multiple time zones. As the project progresses, the team members learn to trust one another and adjust 
+their work routines to accommodate the different time zones, work habits, and culture.
+What stage of team development is being demonstrated in this situation?
+A.Forming
+B.Storming
+C.Performing
+D.Norming
+
+Question 102 
+A robotic arm will be developed in 12 one-month sprints, with each sprint adding a new movement capability. The materials for the arm are rare and in low 
+global supply, therefore, the company wants to ensure that scrap and waste are minimized.
+What should the project manager do before the first sprint starts?
+A.Develop a logistics plan including supporting documentation
+B.Suggest increasing the sprint length to deliver more value in each sprint
+C.Remove the most wasteful user stories from the project backlog
+D.Hold a bidder conference to procure the materials needed for the project
+
+Question 103 
+You and your team are currently developing the stakeholder engagement plan. A project team member has already created the stakeholder engagement 
+assessment matrix below. Which answer choice represents the most important element to be included in the stakeholder engagement plan?
+A.A plan to improve Marie Smith's engagement level
+B.An engagement level improvement plan for Todd Young
+C.A strategy to address the engagement level of John Snow
+D.A strategy to improve the engagement level of Tonya Stewart
+
+Question 104 
+During a key stakeholder presentation, the project manager notices some attendees appear disengaged and confused. No feedback is provided after the 
+presentation. 
+What is the best action for the project manager to take?
+A.Assume the stakeholders understood the presentation and move forward.
+B.Send an email asking stakeholders for feedback and questions.
+C.Schedule a follow-up meeting to clarify and confirm stakeholder understanding.
+D.Revise the project documentation and resend it to stakeholders for review.
+
+Question 105 
+A project manager is explaining the roles and responsibilities for quality assurance with the project team. Who will play a role in this process?
+A.The project manager, project team, and management of the performing organization
+B.The project sponsor along with the project manager and project team
+C.The project manager along with the project team
+D.The project manager, project team, project sponsor, management of the performing organization, and the customer
+
+Question 106 
+You are creating the schedule to deploy a new ERP software in your company. The company is currently undergoing an agile transformation, so it was 
+decided to develop the new ERP iteratively. The first release of the ERP should be rolled out in four months, and you know that another project, a 
+company-wide operating system upgrade, is scheduled in three months. 
+With the upgrade project affecting your schedule, an impact on which of the following should you assess to determine the number of iterations until 
+rollout?
+A.Release planning
+B.Product roadmap
+C.Iteration backlogs
+D.Project charter
+
+Question 107 
+The first phase of a software development project that was conducted using a predictive project management approach is over. The project enters its 
+second phase which will require the project team to utilize an eXtreme Programming (XP) method to develop the rest of the product.
+How might the team ground rules need to be updated?
+A.Acceptance of collective responsibility for the project's deliverables
+B.Addition of agreements for working in a virtual environment
+C.The ground rules will no longer be needed as the team will use XP
+D.Accountability for the creation of highly detailed documentation
+
+Question 108 
+An organization has established a controlling project management office (PMO). The first task of the PMO is to update the guidelines for project 
+compliance in the organization. 
+Which of the following could the PMO enforce? (Choose three.)
+A.Use of particular project management methodologies
+B.Adoption of specific templates, forms, and tools
+C.Adherence to local health regulations
+D.Conformance to governance frameworks
+E.Assignment of project managers by the PMO
+F.Release of management reserves
+
+Question 109 
+The agile project team members are all working in an open office space arrangement. There are many conversations happening concurrently throughout 
+the day. 
+Which of the following is the best option for the project manager?
+A.Schedule frequent team checkpoints and post project artifacts in a transparent fashion
+B.Request team members to hold off their conversations until formal meeting times
+C.Record the conversations and post them in a shared repository
+D.Designate afternoons as quiet work times
+
+Question 110 
+A project manager is analyzing the communication needs of stakeholders in order to develop the communications management plan for a project that will 
+use a hybrid project management framework. The project manager understands that the plan should accommodate the needs of both predictive and agile 
+aspects of the project.
+How should the plan accommodate the agile aspects of this project?
+A.Account for an increased exchange of documentation
+B.Specify the exact number of communication channels
+C.Secure facilities to support face-to-face interactions
+D.Deploy the project management information systems (PMIS)
+
+Question 111 
+You are managing a project, and members of your project team are at odds about the tasks they are assigned. Disagreements between the team members 
+have escalated and have created a reduction in performance across the project.
+Which of the following would be most useful in addressing the team's issues to get the project back on track?
+A.Networking
+B.Recognition and rewards
+C.Training
+D.Conflict management
+
+Question 112 
+A project manager/agile leader has been nurturing and growing team members through and beyond their current roles. This helped several team members 
+to develop their personal and professional skills to the level where they felt that they outgrew their roles. Eventually, some of them left the team to pursue 
+new opportunities within the organization and outside of it.
+Was the project manager/agile leader right in her approach?
+A.No, agile leaders must ensure the team members never leave their teams
+B.Yes, agile leaders should develop team members even if that means losing them
+C.No, agile leaders may develop team members but not beyond their current roles
+D.Yes, agile leaders have to make sure team members eventually leave the team
+
+Question 113 
+A new smartphone will be developed by two teams: a hardware team that will use a predictive project management approach and a software team that 
+will use an agile framework. Each team is colocated but resides in two different parts of the country. The teams will need to coordinate their activities very 
+closely, but bringing them together in one location is not an option.
+What should the project manager do to create the most collaborative environment?
+A.Use a blended agile approach
+B.Create a fishbowl window
+C.Transition the hardware team to agile
+D.Implement caves and common
+
+Question 114 
+A project has been experiencing many challenges and obstacles that have resulted in schedule delays and cost overruns. During the sprint retrospective, 
+the project team members are looking for ways to improve project performance from the next sprint onward. The team wants to be able to absorb 
+negative impacts and recover from them quicker.
+What might the project leader suggest to the team?
+A.Improve resiliency by anticipating numerous potential scenarios and preparing for multiple eventualities
+B.Develop the project deliverables using an iterative and incremental project development approach
+C.Starting from the next sprint planning, help the team envision deliverables rather than outcomes 
+D.Report the impediments to all project stakeholders and request improvement suggestions
+
+Question 115 
+You are a project manager leading an agile project team that has been consistently meeting the goals set for each iteration. The product owner is pleased 
+with the team's progress, and the performance measurement baseline shows no deviations. However, you feel that one team member is less productive 
+than the others.
+What is the most appropriate feedback approach for you to take in this situation?
+A.Allow the project team members to address the issue if they deem necessary
+B.Direct the underperforming team member to work extra hours to bridge the gap
+C.Call out the team member's low productivity at the upcoming iteration retrospective
+D.From the next iteration onward, assign the team member the easiest user stories
+
+Question 116 
+Monthly audits were performed to determine if project activities comply with corporate policies, procedures, and best practices. Throughout the project, 
+the results of the monthly audits indicated that the team was in compliance. However, at the end of the project, it was determined that some of the project 
+activities did not comply with organizational policies.
+What most likely caused these compliance gaps to be missed during the audits?
+A.The audits were conducted by the company's internal audit department
+B.The audits were conducted by one of the project team members
+C.The audits were conducted by the project management office (PMO)
+D.The audits were conducted by an auditor external to the organization
+
+Question 117 
+You are new to the organization and have been given a few weeks to get yourself settled before starting your project in a role of a project manager. During 
+this period, you realize that you have no authority over resources, the staff members are grouped by specialty, the budget is under the full control of those 
+groups' managers, and you, as a project manager, are only required to dedicate part of your time to perform the project work.
+What type of an organization are you working in?
+A.Weak matrix
+B.Functional
+C.Balanced matrix
+D.Projectized
+
+Question 118 
+Two project team members are having a disagreement over how to approach a minor technical detail. The project manager has little experience working 
+with them, and her technical knowledge is limited.
+What is the best action for the project manager to take?
+A.Abide by the decision of the most senior team member
+B.Avoid being involved in the discussion and decision making
+C.Stop the discussion and direct the team members to get back to work
+D.Request the human resource department's representative to step in
+
+Question 119 
+While monitoring project work, the project manager notices an increase in actual costs that have not been accounted for in the original budget. To 
+understand whether a change request to update the cost baseline should be submitted, the project manager gathers raw observations and measurements 
+of all of the costs that have been authorized, incurred, invoiced, and paid. 
+What has the project manager gathered?
+A.Planned value
+B.Earned value
+C.Work performance information
+D.Work performance data
+
+Question 120 
+An agile team is tasked with the development of a robot. The project manager wants to ensure that before the actual robot is built, the team receives early 
+feedback on requirements and adapts the design accordingly.
+Which of the following should the team use to address the project manager's request?
+A.Prototyping
+B.Design review
+C.Checklists
+D.Business case
+
+Question 121 
+The project team has just completed its fourth sprint. While reviewing the project's progress, you determine that the team's average velocity is 25 points 
+per sprint, and the team has earned 1/3 of the total number of story points required to complete the entire project. The average cost per story point is 
+$575.
+What is the estimate to complete the remaining work?
+A.$57,500
+B.$115,000
+C.$14,375
+D.$172,500
+
+Question 122
+The PMBOK Guide defines project charter as a document that formally authorizes the existence of a project and provides the project manager with the 
+authority to apply organizational resources to project activities.
+Developing project charters on agile projects:
+A.Must follow the PMBOK® Guide processes
+B.Must not follow the PMBOK® Guide processes
+C.Is not required because Agile is paperless
+D.Does not necessarily require a formal document
+
+Question 123 
+In order to take advantage of the best talent available, a project manager recruits developers internationally rather than just locally. She is delighted to have 
+acquired such highly skilled individuals but now needs to develop them into a cohesive team. Ideally, the project manager would like to bring everyone 
+together at the home office, but the project budget does not allow for travel expenses.
+What is the best tool or technique for the project manager to use in this situation?
+A.Sensitivity analysis
+B.Recognition and rewards
+C.Virtual teams
+D.Colocation
+
+Question 124 
+You are leading two independent teams working on the same project. The nature of the deliverables requires that one team takes a predictive approach, 
+while the other uses scrum. Due to dependencies between the teams and the variable nature of the outputs from the scrum team, the predictive team 
+needs to confirm their understanding of the scrum team's activities with the shortest feedback loop possible.
+What is your best course of action?
+A.Include a project retrospective into the project schedule
+B.Request that the scrum team use information radiators
+C.Incorporate the use of periodic customer feedback loops
+D.Have the predictive team attend the daily scrum meetings
+
+Question 125 
+To better use existing knowledge and to create new knowledge for a project, the project manager is looking for ways to identify any knowledge gaps. 
+Which of the following would help the project manager the most to complete this process?
+A.Bid documents
+B.Resource breakdown structure
+C.Quality metrics
+D.To-complete performance index
+
+Question 126 
+You are leading a construction project that involves a vendor. A team member tells you that based on the rough assessment of the vendor's current work in 
+progress, she suspects that the vendor will be unable to complete their work on time. You share your concerns with the vendor, but they claim that they 
+are progressing as planned.
+What is your best course of action to ensure a mutual understanding of the work in progress?
+A.Conduct a walkthrough
+B.Perform an earned value analysis (EVA)
+C.Conduct an audit
+D.Resort to alternative dispute resolution (ADR)
+
+Question 127 
+The project manager and a stakeholder get into a heated debate about the stakeholder's idea requiring a scope change to the project. The project manager 
+says the change will not be implemented and that the stakeholder must drop the idea. The project manager emphasizes that she is the project manager 
+and the decision is final.
+Should the project manager have responded differently to resolve the conflict?
+A.No. The project manager has the formal authority to make the final decision.
+B.Yes. The project manager should have discussed the idea with other stakeholders.
+C.No. The project manager demonstrated the culture in which the company works.
+D.Yes. The project manager should have compromised with the stakeholder.
+
+Question 128 
+A software development project will use an iterative and incremental approach to produce project deliverables. What planning strategy would work best 
+for this project?
+A.Decomposing epics into features and further into user stories
+B.Outsourcing project planning to an external subject matter expert
+C.Breaking down high-level deliverables into work packages
+D.Planning product scope and refraining from planning project scope
+
+Question 129 
+A software development project operates in an uncertain and rapidly changing environment. Competitors are constantly releasing new products with 
+features more advanced than those developed by the team. To keep up with the market, the sprint plans are continuously updated. The project manager is 
+concerned that the project is in danger due to "done drift". 
+What decision will the project manager have to make under these circumstances?
+A.How to keep the team motivated despite more advanced features developed by competitors
+B.When to switch from the adaptive to predictive development approach to prevent further changes
+C.What to do with the knowledge gained during the sprint retrospective meetings
+D.Whether to release the product as-is or continue updating the features prior to launch
+
+Question 130 
+A project manager has just calculated the project performance measurements, and the project's current cost performance index (CPI) is 0.9 while the 
+schedule performance index (SPI) is 1.1. 
+Which of the following is correct regarding the project's performance status?
+A.Over budget and ahead of schedule
+B.Under budget and behind schedule
+C.Over budget and behind schedule
+D.Under budget and ahead of schedule
+
+Question 131
+You are leading a software development project for a client. The change control board (CCB) has been inundated with change requests from the client 
+throughout the project as the product has evolved. This situation drives the team crazy and makes controlling the project scope extremely challenging and 
+time-consuming.
+Which of the following tailoring considerations might you have missed earlier in the project?
+A.Diversity
+B.Stability of requirements
+C.Physical location
+D.Validation and control
+
+Question 132 
+As the project manager, you are developing a draft of the document that authorizes a new software development project. You have reviewed the 
+agreements and both business documents. 
+What else should be done as part of this process?
+A.Identify stakeholders and prepare the stakeholder register
+B.Study the governance functions and processes to provide guidance and decision making
+C.Update the business documents to correct any errors
+D.Review the benefits management plan
+
+Question 133 
+You are managing a project that is nearing its end. You have been reviewing the project management plan to ensure that all the project work is completed 
+and that the project has met its objectives. The next thing you need to do before moving on to the next project is to complete the administrative closure of 
+the project.
+Which of the following activities will not be performed as part of this process?
+A.Closing seller contracts
+B.Handing over the project deliverables to operations
+C.Transferring the knowledge gained to the lessons learned repository
+D.Measuring stakeholder satisfaction
+
+Question 134 
+You are leading a software development project, which requires knowledge of several programming languages. During project execution, one of the 
+developers has been pulled out of the project by her functional manager. The manager provided you with another developer instead.
+What should you do first?
+A.Provide the new developer with an ability test
+B.Introduce the new developer to the project sponsor
+C.Schedule training for the new developer
+D.Assign the developer the next user story in the backlog
+
+Question 135 
+An organization is transitioning from predictive project management to agile. As a project manager, your upcoming project will require compliance 
+reporting that will need to be submitted to internal auditors due to regulatory oversight.
+How might you address the need for compliance reporting in this hybrid environment?
+A.Work with the auditors to streamline the process
+B.Task one of the team members to complete the compliance reporting
+C.Transfer the responsibility of compliance reporting to the legal department
+D.Avoid agile as it not suitable for projects that operate in a regulatory environment
+
+Question 136 
+Two project team members have had frequent clashes, which have at times resulted in shouting matches during team meetings. The project manager has 
+intervened, asked them to resolve their differences, and even facilitated a meeting between them, but things have gotten worse. The project manager is 
+concerned that the situation is negatively affecting team cohesion and is placing the successful completion of the project at risk.
+What should the project manager do next?
+A.Use formal procedures including disciplinary actions
+B.Allow the team members to resolve their differences on their own
+C.Facilitate another meeting between the two team members
+D.Request that the other project team members intercede as a form of peer pressure
+
+Question 137 
+You are attempting to coordinate activities between your project, another related project, and operations, all of which are being managed as a group. A 
+conflict has arisen over control of a key resource that is vital to both projects as well as operations. The conflict has reached an impasse and needs to be 
+resolved by a higher authority.
+What is your best course of action?
+A.Discuss the problem with the portfolio manager
+B.Escalate the issue to the operations manager
+C.Raise the issue with the other project manager
+D.Request help from the project management office
+
+Question 138 
+You are a senior project manager who is mentoring a newly promoted project manager. Your mentee states that she has recurring arguments with her 
+project team and is having difficulty controlling her own temper. This situation has created a toxic environment for the project team and threatens the 
+successful completion of the project.
+What is the best advice for your mentee?
+A.Improve leadership skills
+B.Develop emotional intelligence
+C.Study conflict management
+D.Introduce recognition and rewards
+
+Question 139 
+You are leading a software development project, which is utilizing an agile framework. While monitoring the progress of the project, it is apparent that 
+velocity is trending down, and you are aware of some setbacks that have been encountered by the development team. You want to capture and analyze 
+lessons learned so far during the project to improve the process going forward. 
+What is the best way to achieve this goal?
+A.Perform a sprint review
+B.Schedule a sprint planning meeting
+C.Conduct an iteration retrospective
+D.Lessons learned are not utilized on agile projects
+
+Question 140 
+A project manager creates a procurement statement of work (SOW) from the project scope baseline. The scope of the SOW, however, is not yet well 
+defined, therefore the project manager decides to contract with a vendor to provide an agile team of programmers. The contract is structured with fixed-
+price increments based on user stories.
+How might the project manager verify that the vendor has met the contractual obligations?
+A.Wait until the team completes the development of all user stories specified in the SOW
+B.Request the product owner to approve or reject user stories during a sprint review
+C.Validate the user stories as soon as they are completed at any point during a sprint 
+D.Conduct a procurement audit with the vendor each time a sprint retrospective is held
+
+Question 141 
+A multi-phase project is facing significant budgetary challenges due to fluctuating material costs. The project manager anticipates this issue will persist in 
+future phases. 
+What proactive measure should the project manager implement to minimize budget impact?
+A.Increase contingency reserves for all future phases.
+B.Use predictive analysis to forecast future cost variations and negotiate fixed-price contracts.
+C.Request a larger overall budget to account for uncertainties.
+D.Delay purchasing materials until costs stabilize.
+
+Question 142 
+An agile project manager is working with stakeholders to develop the project vision for inclusion in the project charter and wants to ensure that regulatory 
+compliance measures are incorporated into the project requirements.
+How might the agile project manager analyze the consequences of non-compliance?
+A.Facilitate a project post-mortem
+B.Play a session of "remember the future"
+C.Lead a round of planning poker
+D.Conduct a t-shirt sizing exercise
+
+Question 143 
+A project to develop a critical safety system requires that there are no escaped defects. The system will be developed over the course of several iterations, 
+and the project leader wants defects to be caught proactively and fixed as the code is being written.
+What is the project leader's best course of action?
+A.Include a user story for smoke testing in every sprint
+B.Do not allow changes after the system design is approved
+C.Employ continuous integration of product increments
+D.Request that developers work in pairs while creating software
+
+Question 144 
+During a critical phase of a software development project, a project manager notices that team members frequently interrupt each other in meetings, fail 
+to document key decisions, and miss agreed-upon deadlines. The project team had previously established ground rules to ensure effective communication, 
+timely task completion, and professional conduct. Despite these agreements, adherence has been inconsistent, leading to frustration among some 
+stakeholders.
+What should the project manager do to ensure team members consistently follow the established ground rules?
+A.Conduct periodic assessments and provide feedback on adherence to ground rules.
+B.Assume team members will naturally adhere once the rules are set.
+C.Only address violations when team performance is negatively impacted.
+D.Replace team members who fail to comply with ground rules.
+
+Question 145 
+Four vendors have responded to a bid request on your project. Which of the following vendors should you select based on the expected monetary value 
+(EMV)?
+A.Vendor 1 with an 80% probability of success and profit of $20,000
+B.Vendor 2 with a 90% probability of success and profit of $19,000
+C.Vendor 3 with a 75% probability of success and profit of $18,000 
+D.Vendor 4 with an 85% probability of success and profit of $20,000
+
+Question 146 
+A project manager is leading a product development project, which will use an agile framework. The project team and other stakeholders are co-located at 
+the company's corporate office. 
+What is the best way for the project manager to communicate the project status and promote transparency?
+A.Reserve a conference room and invite all relevant stakeholders to monthly project status meetings
+B.Post burndown charts and other project status documents to the company's intranet site
+C.Share the appropriate information whenever requested by stakeholders
+D.Display burndown charts and other relevant project artifacts in a highly visible location
+
+Question 147 
+After an agile team completes three iterations, the project manager determines that the average velocity of the team for these three iterations was 30 
+story points. There are 292 more story points to complete the remaining portion of the project.
+How many additional iterations will it take for the team to complete the project?
+A.7 iterations
+B.8 iterations
+C.9 iterations
+D.10 iterations
+
+Question 148 
+A project manager is conducting a daily standup. Each member of the development team states that their work has been stalled due to various blockers. As 
+a result, the entire development team has been idled, and the schedule baseline is in jeopardy.
+What should the project manager do first?
+A.Attempt to resolve the problems during the meeting
+B.Analyze and prioritize the blockers
+C.Assign the team to work on another project in the meanwhile
+D.Escalate the issue to the project sponsor
+
+Question 149 
+Midway into project execution, a key stakeholder leaves the company. A new stakeholder fills in the vacant role. The project manager understands that the 
+stakeholder engagement plan should be updated to reflect the strategies and actions required to involve the new stakeholder in the project. The project 
+manager meets with the new stakeholder for an interview. 
+Which of the following questions would be the most helpful for the project manager in updating the plan? (Choose four.)
+A.Have you ever managed a project before?
+B.How much risk are you willing to take for an anticipated benefit?
+C.What position did you hold in your previous company?
+D.What are your communication preferences?
+E.Do you have any lessons learned to share from your previous projects?
+F.Do you think it was the right thing to undertake the project?
+
+Question 150 
+For the third consecutive time, at the end of each iteration, a software application developed by the team fails a review by the quality assurance 
+department. This situation causes rework for the product and a delay in the project schedule. The project manager wants to reduce the feedback loop to 
+the shortest possible interval.
+What is the best course of action for the project manager?
+A.Shorten the iteration length
+B.Reduce the size of the user stories
+C.Revise the schedule baseline
+D.Suggest pair programming to the team
+
+Question 151 
+You have joined a project in which requirements are elaborated at several intervals during delivery, and the delivery is divided into subsets of the overall 
+product. Change is incorporated at periodic intervals, and risk and cost are controlled by progressively elaborating the plans with new information. Key 
+stakeholders are regularly involved.
+What development approach is used on your project?
+A.Agile
+B.Predictive
+C.Hybrid
+D.Periodic
+
+Question 152 
+A team of generalizing specialists with expertise in adaptive organizational change is assigned to a project that will change the organizational structure from 
+a weak matrix to a project-oriented organizational type. The product owner is concerned that the broad impact of the change will cause significant 
+resistance by those affected by the change.
+What is the best strategy for the project team to assist with change adoption?
+A.Keep the project confidential until the effective date of the reorganization
+B.Appoint a change control board to review and decide on changes
+C.Reassure the project managers that their scope of authority will not change
+D.Incorporate stakeholder engagement and motivational approaches
+
+Question 153 
+APM has been given a project where a company is developing a medical device that monitors patients' vital signs in real-time and integrates with an 
+application for remote monitoring by healthcare providers. The device has a target end date, but the application is missing some development provisions.
+What approach might work best for the team?
+A.Use a waterfall approach that meets the end date and regulatory standards and an adaptive methodology that addresses the missing development 
+provisions and allows the team to incorporate user feedback iteratively.
+B.Create an approach ensuring the hardware and software follow a strict sequential development plan.
+C.Create an adaptive approach that allows the team to iteratively develop the project's hardware and software to meet its fixed end date and regulatory 
+standards.
+D.Rely solely on a phased approach that will allow the PM to segment the project into distinct stages, allowing flexibility in adapting the application 
+development process based on evolving user feedback.
+
+Question 154 
+You are managing a project team that has recently been expanded by new team members working remotely from another country. Their roles have been 
+outlined to form a preliminary team charter. Nevertheless, you have noticed a considerable lack of acceptance of cultural differences in the team, resulting 
+in frequent conflicts.
+Which of the following techniques could help you in this situation? (Choose three.)
+A.Focus groups
+B.Role definition
+C.Ground rules
+D.Ability tests
+E.Meetings
+
+Question 155 
+To engage the newly identified stakeholders in the project at the earliest opportunity, the scrum master suggests inviting them to the upcoming sprint 
+review meeting to demonstrate to the stakeholders that the team is moving in the right direction and get feedback from the stakeholders about what the 
+team has accomplished.
+Which of the following is another reason for inviting the stakeholders to this meeting?
+A.To reflect on the team performance
+B.To prioritize high-risk user stories for the next sprint
+C.To reprioritize the release backlog
+D.To discuss the high-level plans for the next sprint
+
+Question 156 
+You have been provided a list of concerns some stakeholders have with your project. You meet with them to address the concerns in hopes of gaining their 
+support and cooperation. You pay close attention by actively and effectively listening. You focus on each person's input to ensure you are aware of and are 
+taking all perspectives into consideration. You then clearly articulate your point and your position and ask for their support.
+Which tool or technique best describes the skills you are using?
+A.Influencing
+B.Team performance assessments
+C.Conflict management
+D.Cultural awareness
+
+Question 157 
+As a project manager, you are in the process of estimating the team resources that will be required for your project. The challenge you are having is that, 
+due to the nature of the project and the selected development approach, only a few of the top levels of the WBS have been identified with the remainder 
+to be progressively elaborated throughout the project.
+What is the best approach to determine the team resource requirements for the project?
+A.Check the organizational process assets for similar projects and use analogous estimating
+B.Apply bottom-up estimating using the work breakdown structure (WBS) as a guide
+C.Utilize parametric estimating for the individual work packages within the existing WBS
+D.Decompose the WBS down to the work package level during initial project planning
+
+Question 158 
+As a project manager, you recently completed a project team performance appraisal, and a previously unknown competency gap in technical skills was 
+uncovered, which needs to be addressed.
+What should you do next?
+A.Implement the response planned for this risk
+B.Conduct unplanned training to address the competency gap
+C.Consult the training management plan
+D.Let go of the staff who have technical skill gaps
+
+Question 159 
+The project manager is struggling to gain buy-in from a critical stakeholder group. Despite repeated engagement attempts, they remain skeptical of the 
+project's value to their department. 
+What should the project manager prioritize to gain trust and influence this group?
+A.Highlight the project's alignment with their department's strategic goals.
+B.Emphasize the project's benefits to other stakeholders.
+C.Assign project tasks to this stakeholder group to increase their involvement.
+D.Schedule additional status update meetings to keep them informed.
+
+Question 160 
+You review the WBS of your project and realize that due to the lack of in-house expertise, some of the deliverables will need to be outsourced to a vendor. 
+However, the requirements for these deliverables are not well-understood at the moment. Therefore, you decide that the outsourced portion of work will 
+need to be managed using an agile framework.
+What is your best approach in negotiating an agreement with the vendor?
+A.Seek an informal agreement rather than a formal contract
+B.Secure a fixed-price contract for the outsourced scope
+C.Negotiate aggressively for the most advantageous terms
+D.Pursue a shared-risk-reward contract relationships
+
+Question 161 
+During a sprint retrospective, the team members complain that the business analyst has been unresponsive to clarify the work package to be developed in 
+the sprint. As a result, the work package has not been accepted by the customer. The project manager reaches out to the business analyst and requests 
+them to collaborate with the team during the upcoming sprints. 
+What else should the project manager do?
+A.No further action needed as the problem is resolved
+B.Report a work ethics violation to the human resources department
+C.Continue monitoring the business analyst's involvement
+D.Instruct the team to fix the work package to meet customer needs
+
+Question 162
+You are leading a project to replace an aging bridge spanning a river in a heavily populated area. The new bridge would include a pedestrian pathway, that 
+is not a feature of the existing bridge. The bridge is well under construction when residents learn the pathway would allow strangers to enter their 
+neighborhood at all times. The residents demand the elimination of the pathway. 
+What would have been the best course of action to avoid this situation?
+A.Identify the pathway as a possible point of contention with stakeholders early in the project
+B.Nothing could have been done differently because the project was authorized per the project charter
+C.Engage a public relations company to handle community outreach once local residents voiced their disapproval
+D.Reroute the pathway entrance during construction to an old railway trail instead of the local street
+
+Question 163 
+Your company has been contracted by a client for a software development project. The project will use agile methods to deliver product increments. For 
+the client, however, this project will be their first experience with agile. You want to make sure that the client gains the full benefit of early and continuous 
+delivery of software.
+What is your best course of action?
+A.Develop a change management plan to address the inevitable changes
+B.Request the client to take part in product testing to speed up delivery
+C.Gain alignment with the client on the timing of project deliverables
+D.Instruct the project team to develop all features in a single release
+
+Question 164 
+A project manager and team are in the process of finalizing all project activities. They have obtained final acceptance and transferred ownership of 
+deliverables, collated lessons learned, archived all project documents, and obtained feedback from relevant stakeholders. Finally, the project manager and 
+team have been released and reassigned to other assignments. 
+Based on the information provided, what might have been forgotten?
+A.Reviewing project requirements
+B.Verifying project deliverables
+C.Sharing the final project report
+D.Conducting benefit analysis
+
+Question 165 
+A company is experiencing exponential growth and will soon run out of space in their current production facility. A needs assessment has been completed 
+to evaluate alternatives. One of the options to support future growth is to build an expansion on to their existing production facility.
+What should the company do next?
+A.Collect requirements and develop the project management plan
+B.Understand the business goals and objectives to recommend proposals
+C.Prepare the business case and benefits management plan
+D.Develop the project charter and identify the key stakeholders
+
+Question 166 
+A project manager is developing the communications management plan. She has determined which stakeholders need what information and how often 
+she will distribute the various reports. 
+What else should the project manager do as part of this process?
+A.Determine the information needs of the stakeholders
+B.Determine how the information will be transmitted
+C.Measure the effectiveness of the communications
+D.Submit a change request to update the communications management plan
+
+Question 167 
+The development team completed 24 of the planned 28 story points for the sprint. During the sprint review, the customer approves the completed 
+deliverables, but he admonishes the team as being lazy and incompetent for failing to complete the entire sprint backlog.
+How should the project manager respond?
+A.Meet with the customer in private and challenge them to be more respectful to the team
+B.Discuss the reasons for the failed sprint during the next daily standup meeting
+C.Encourage the team to commit to completing fewer story points for the next sprint
+D.Challenge the team to work on their days off until they cover the shortfall
+
+Question 168 
+A vendor has been contracted by a buyer to develop a new device. The vendor insisted that the contract thoroughly capture the device specifications. The 
+buyer does not have clear requirements upfront and, therefore, requested that the vendor develop the device using agile. The vendor delivers as per the 
+contract, but the buyer is not satisfied with the outcome. 
+Which Agile Manifesto's value was most likely not appropriately applied?
+A.Business people and developers must work together
+B.Individuals and interactions over processes and tools
+C.Pair programming over continuous integration
+D.Customer collaboration over contract negotiations
+
+Question 169 
+A project manager is creating the stakeholder register. He has just completed the stakeholder classifications and needs to update the project roles.
+According to the partial stakeholder register below, which individual is most likely to be the project sponsor?
+A.John Show
+B.Todd Young
+C.Marie Smith
+D.Tonya Stewart
+
+Question 170 
+While the first phase of a construction project was a success, one of the two lead architects suddenly had to resign from her position due to a conflict of 
+interest within the company. 
+What should the project manager do immediately to manage the team composition?
+A.Write a work performance report to generate awareness of the lead architect's departure
+B.Update the project organizational chart to reflect the team change
+C.Review the change management plan and submit a change request
+D.Use float on the critical path to prevent schedule slippage due to this new risk
+
+Question 171 
+A global project involves multiple cross-functional teams in different time zones. The project artifacts are stored in a centralized cloud-based repository. 
+Despite regular version control and accessibility checks, stakeholders report inconsistent updates to critical documents, creating delays in decision-making.
+As the project manager, how should you address this issue while ensuring the repository effectively supports collaboration, version integrity, and 
+stakeholder access?
+A.Implement automated notifications for every document update to inform all stakeholders in real-time.
+B.Introduce a decentralized repository system for each region to reduce dependency on a single repository.
+C.Establish clearly defined document ownership, update schedules, and real-time synchronization protocols.
+D.Transition to physical artifacts for high-priority documents to ensure reliability and accuracy.
+
+Question 172 
+During the project's execution phase, a team member suggests modifying a process to improve efficiency. The project manager wants to address this 
+change request properly. 
+What should the project manager do first?
+A.Implement the change immediately to save time.
+B.Document the change request and evaluate its impact on project objectives.
+C.Reject the change as it might disrupt the project timeline.
+D.Present the change request to the sponsor without review.
+
+Question 173 
+The latest software released to the customer in the first project phase is full of defects. The customer is angry and demands that the development of the 
+new release, which is planned to be delivered in the second phase, is much more transparent. The customer wants to see the team's results more regularly 
+and without very long development intervals in-between. 
+Which of the following could the project team introduce in the second phase to better comply with the customer's demand? (Choose four.)
+A.A cadence with regular timeboxes
+B.Regular and frequent retrospectives
+C.Optimization at the level of each individual team member
+D.Test-driven development practices
+E.Incremental delivery using a backlog
+F.Limiting the number of changes before the software is released
+
+Question 174
+Midway into an iteration, an agile team faces a minor technical issue. One of the team members recalls that the project manager is an expert in the field 
+from her past experience as a senior developer. The team requests that the project manager help resolve the issue.
+What should the project manager do first?
+A.Let the team resolve the issue
+B.Help the team resolve the issue
+C.Resolve the issue for the team
+D.Consult with the product owner
+
+Question 175 
+You are the project manager for a project that is in its early stages. During a meeting, your boss informs you that senior management would like you to 
+include a particular staff member on your project team because of their necessary expertise. You have not recruited any other team members, and the 
+project has not even been formally authorized yet.
+How should you handle senior management's request?
+A.Deny the request because the project manager should be the one to acquire project resources.
+B.Accept the request, since identifying specific resources for the project can occur as part of the early planning process.
+C.Accept the request only after you have finished creating the project management plan.
+D.Deny the request since you have not had an opportunity to verify that the individual has the proper skills.
+
+Question 176 
+A project manager must determine the execution strategy for a government-funded infrastructure project with significant financial constraints. The project 
+requires coordination between multiple contractors, fixed budgets, and a phased rollout to mitigate risks.
+Which execution strategy should the project manager recommend?
+A.Agile execution with frequent iterations
+B.Predictive execution with phased contracting
+C.Incremental execution with rolling wave planning
+D.Hybrid execution using Agile and Predictive elements
+
+Question 177 
+You are preparing for an upcoming software development project. The project will be initiated and planned using a predictive approach, while the 
+development team will use Kanban. A budget has been established for training, and you need to determine how to allocate those funds.
+What is your best course of action?
+A.Send the development team to a seminar on maximizing WIP
+B.Provide training to transform T-shaped people into I-shaped people
+C.Deliver training to convert l-shaped people into T-shaped people
+D.Train the team on how to best prioritize the features to be developed
+
+Question 178 
+After a few iterations, new features have been requested and added to the project backlog. Senior leadership has provided additional funding and 
+approved a new project timeline. However, a team member mentions that the project charter is no longer in alignment with the updated project backlog.
+What action should the project manager/agile leader take to resolve the issue?
+A.Ask the team member to revise the project charter and submit it to the project sponsor for approval
+B.Take ownership of the issue and work with the project sponsor to revise the project charter
+C.Capture the risk of misalignment between the project backlog and the charter in the risk register
+D.Empower the project team members to develop and implement their own project charter
+
+Question 179 
+The project team reports that they have finished creating the requirements management plan, the requirements documentation, and the requirements 
+traceability matrix. The team states that they are going to start working on the project work breakdown structure (WBS) next.
+What has the project team forgotten to do?
+A.Create the project scope statement
+B.Complete the project management plan
+C.Update the lessons learned register
+D.Begin validating the scope
+
+Question 180 
+You are drafting a stakeholder engagement plan for a software development project. The product will be built using a scrum framework. You want to 
+ensure that the stakeholders' level of influence on product development is analyzed and categorized.
+What is your best course of action?
+A.Submit a change request to update the stakeholder register
+B.Wait until the stakeholders attend the first sprint review
+C.Suggest that the product owner use a power/influence grid
+D.Conduct the analysis yourself using hierarchical charts
