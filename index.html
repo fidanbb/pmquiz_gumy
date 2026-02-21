@@ -183,6 +183,69 @@
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
 
+        .chapter-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+
+        .chapter-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .chapter-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .chapter-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .chapter-meta {
+            background: #f0f2f5;
+            color: #667eea;
+            font-size: 12px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .dark-mode .chapter-card {
+            background: #34495e;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .dark-mode .chapter-card h3 {
+            color: #ecf0f1;
+        }
+
+        .dark-mode .chapter-card p {
+            color: #bdc3c7;
+        }
+
+        .dark-mode .chapter-meta {
+            background: #2c3e50;
+            color: #93c5fd;
+        }
+
         .chapter-info {
             font-size: 13px;
             margin-top: 8px;
@@ -570,20 +633,37 @@
         </div>
 
         <div class="mock-selection" id="mockSelection">
-            <h2>Select Mock Test</h2>
-            <div class="mock-grid">
-                <button class="mock-btn" onclick="selectMock(1)">MOCK_1</button>
-                <button class="mock-btn" onclick="selectMock(2)">MOCK_2</button>
+            <h2 style="text-align: center; margin-bottom: 25px;">Select Chapter</h2>
+            <div class="chapter-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="chapter-card" onclick="selectMock(1)">
+                    <div class="chapter-icon">📚</div>
+                    <h3>Chapter 1</h3>
+                    <p>Foundation & Fundamentals</p>
+                    <div class="chapter-meta">180 Questions</div>
+                </div>
+                <div class="chapter-card" onclick="selectMock(2)">
+                    <div class="chapter-icon">🚀</div>
+                    <h3>Chapter 2</h3>
+                    <p>Advanced Execution & Strategy</p>
+                    <div class="chapter-meta">180 Questions</div>
+                </div>
             </div>
-            <div style="margin-top: 20px; text-align: center; display: flex; justify-content: center; gap: 10px;">
-                <button class="btn btn-secondary" onclick="showStatistics()" style="padding: 8px 16px;">📊 Stats</button>
-                <button class="btn btn-secondary" onclick="toggleDarkMode()" style="padding: 8px 16px;">🌙 Dark</button>
+            <div style="margin-top: 30px; text-align: center; display: flex; justify-content: center; gap: 15px;">
+                <button class="btn btn-secondary" onclick="showGlobalStatistics()"
+                    style="padding: 12px 24px; font-weight: bold; border-radius: 25px; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"><span
+                        style="margin-right:8px">📊</span> Global Stats</button>
+                <button class="btn btn-secondary" onclick="toggleDarkMode()"
+                    style="padding: 12px 24px; font-weight: bold; border-radius: 25px; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"><span
+                        style="margin-right:8px">🌙</span> Dark Mode</button>
             </div>
         </div>
 
         <div class="chapter-selection hidden" id="chapterSelection">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <h2>Choose a Chapter (20 Questions Each)</h2>
+                <button class="back-btn" onclick="backToMocks()">← Back to Chapters</button>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2>Choose a Section (20 Questions Each)</h2>
                 <div style="display: flex; gap: 10px;">
                     <button class="btn btn-secondary" onclick="showStatistics()" style="padding: 8px 16px;">📊
                         Stats</button>
@@ -614,10 +694,10 @@
 
         <div class="results hidden" id="results">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <button class="back-btn" onclick="backToChapters()">← Back to Chapters</button>
-                <button class="btn btn-primary" onclick="retryChapter()">Retry This Chapter</button>
+                <button class="back-btn" onclick="backToChapters()">← Back to Sections</button>
+                <button class="btn btn-primary" onclick="retryChapter()">Retry This Section</button>
             </div>
-            <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Chapter Results</h2>
+            <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Section Results</h2>
             <div class="score-circle">
                 <div class="score-number" id="scoreNumber"></div>
                 <div class="score-label">out of 20</div>
@@ -627,8 +707,8 @@
 
         <div class="statistics hidden" id="statistics">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <h2 style="color: #333;">📊 Your Statistics</h2>
-                <button class="back-btn" onclick="backToChapters()">← Back to Chapters</button>
+                <h2 style="color: #333;" id="statsTitle">📊 Your Statistics</h2>
+                <button class="back-btn" onclick="backToChapters()" id="statsBackBtn">← Back to Sections</button>
             </div>
             <div id="statsContent"></div>
         </div>
@@ -2653,9 +2733,39 @@
         let timerInterval = null;
         let questionStartTime = 0;
         let totalTimeSpent = 0;
-        let scoreHistory = JSON.parse(localStorage.getItem('quizScoreHistory') || '[]');
+
+        // Data Isolation and Migration
+        let appData = JSON.parse(localStorage.getItem('quizAppData'));
+        if (!appData) {
+            // Migrate legacy data to Mock 1
+            const legacyScore = JSON.parse(localStorage.getItem('quizScoreHistory') || '[]');
+            const legacyBookmarks = JSON.parse(localStorage.getItem('quizBookmarks') || '[]');
+            appData = {
+                mock1: { scoreHistory: legacyScore, bookmarks: legacyBookmarks },
+                mock2: { scoreHistory: [], bookmarks: [] }
+            };
+            localStorage.setItem('quizAppData', JSON.stringify(appData));
+        }
+
+        let scoreHistory = [];
+        let bookmarkedQuestions = [];
         let isDarkMode = localStorage.getItem('quizDarkMode') === 'true';
-        let bookmarkedQuestions = JSON.parse(localStorage.getItem('quizBookmarks') || '[]');
+
+        function syncDataForMock() {
+            const mockKey = 'mock' + currentMock;
+            if (!appData[mockKey]) {
+                appData[mockKey] = { scoreHistory: [], bookmarks: [] };
+            }
+            scoreHistory = appData[mockKey].scoreHistory;
+            bookmarkedQuestions = appData[mockKey].bookmarks;
+        }
+
+        function saveAppData() {
+            const mockKey = 'mock' + currentMock;
+            appData[mockKey].scoreHistory = scoreHistory;
+            appData[mockKey].bookmarks = bookmarkedQuestions;
+            localStorage.setItem('quizAppData', JSON.stringify(appData));
+        }
 
         // Fisher-Yates shuffle algorithm
         function shuffleArray(array) {
@@ -2831,7 +2941,7 @@
                 playSound('correct');
             }
 
-            localStorage.setItem('quizBookmarks', JSON.stringify(bookmarkedQuestions));
+            saveAppData();
             updateBookmarkButton();
         }
 
@@ -2845,52 +2955,107 @@
             }
         }
 
+        // Navigation Router
+        function navigateToView(viewId) {
+            const views = ['mockSelection', 'chapterSelection', 'quizContent', 'results', 'statistics'];
+            views.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    if (id === viewId) {
+                        el.classList.remove('hidden');
+                    } else {
+                        el.classList.add('hidden');
+                    }
+                }
+            });
+        }
+
         // Statistics functions
+        let isGlobalStatsView = false;
+
+        function showGlobalStatistics() {
+            isGlobalStatsView = true;
+            navigateToView('statistics');
+            document.getElementById('statsTitle').textContent = "📊 Global Analytics Dashboard";
+            document.getElementById('statsBackBtn').textContent = "← Back to Chapters";
+            document.getElementById('statsBackBtn').onclick = () => {
+                navigateToView('mockSelection');
+                document.getElementById('headerInfo').textContent = 'Select a Chapter to Begin';
+                document.querySelector('.header h1').textContent = 'Project Management Quiz';
+            };
+            displayStatistics();
+        }
+
         function showStatistics() {
-            document.getElementById('chapterSelection').classList.add('hidden');
-            document.getElementById('statistics').classList.remove('hidden');
+            isGlobalStatsView = false;
+            navigateToView('statistics');
+            document.getElementById('statsTitle').textContent = `📊 Chapter ${currentMock} Statistics`;
+            document.getElementById('statsBackBtn').textContent = "← Back to Sections";
+            document.getElementById('statsBackBtn').onclick = backToChapters;
             displayStatistics();
         }
 
         function displayStatistics() {
             const statsContent = document.getElementById('statsContent');
 
-            if (scoreHistory.length === 0) {
+            let dataToProcess = [];
+
+            if (isGlobalStatsView) {
+                // Combine data from all chapters
+                const mock1Data = appData['mock1'] ? appData['mock1'].scoreHistory : [];
+                const mock2Data = appData['mock2'] ? appData['mock2'].scoreHistory : [];
+
+                // Tag them for UI rendering if needed
+                const m1Tagged = mock1Data.map(d => ({ ...d, source: 'Chapter 1' }));
+                const m2Tagged = mock2Data.map(d => ({ ...d, source: 'Chapter 2' }));
+
+                dataToProcess = [...m1Tagged, ...m2Tagged];
+            } else {
+                // Only current chapter data
+                dataToProcess = scoreHistory;
+            }
+
+            if (dataToProcess.length === 0) {
                 statsContent.innerHTML = `
                     <div style="text-align: center; padding: 40px; color: #666;">
                         <h3>No statistics yet</h3>
-                        <p>Complete some chapters to see your progress!</p>
+                        <p>Complete some sections to see your progress!</p>
                     </div>
                 `;
                 return;
             }
 
-            const totalAttempts = scoreHistory.length;
-            const totalScore = scoreHistory.reduce((sum, attempt) => sum + attempt.score, 0);
+            const totalAttempts = dataToProcess.length;
+            const totalScore = dataToProcess.reduce((sum, attempt) => sum + attempt.score, 0);
             const averageScore = (totalScore / totalAttempts).toFixed(1);
-            const bestScore = Math.max(...scoreHistory.map(attempt => attempt.score));
-            const totalTime = scoreHistory.reduce((sum, attempt) => sum + (attempt.timeSpent || 0), 0);
+            const bestScore = Math.max(...dataToProcess.map(attempt => attempt.score));
+            const totalTime = dataToProcess.reduce((sum, attempt) => sum + (attempt.timeSpent || 0), 0);
             const averageTime = (totalTime / totalAttempts / 60).toFixed(1);
 
-            const chapterStats = {};
-            scoreHistory.forEach(attempt => {
-                if (!chapterStats[attempt.chapter]) {
-                    chapterStats[attempt.chapter] = { attempts: 0, totalScore: 0, bestScore: 0 };
+            const sectionStats = {};
+            dataToProcess.forEach(attempt => {
+                // If global, we might want to separate by source, but for simplicity, grouping by section number is okay
+                // Let's create a unique key if global, else just section number
+                const key = isGlobalStatsView ? `${attempt.source} - Sec ${attempt.chapter}` : `Section ${attempt.chapter}`;
+
+                if (!sectionStats[key]) {
+                    sectionStats[key] = { attempts: 0, totalScore: 0, bestScore: 0 };
                 }
-                chapterStats[attempt.chapter].attempts++;
-                chapterStats[attempt.chapter].totalScore += attempt.score;
-                chapterStats[attempt.chapter].bestScore = Math.max(chapterStats[attempt.chapter].bestScore, attempt.score);
+                sectionStats[key].attempts++;
+                sectionStats[key].totalScore += attempt.score;
+                sectionStats[key].bestScore = Math.max(sectionStats[key].bestScore, attempt.score);
             });
 
-            let chapterStatsHtml = '';
-            for (let chapter = 1; chapter <= 9; chapter++) {
-                const stats = chapterStats[chapter] || { attempts: 0, totalScore: 0, bestScore: 0 };
+            let sectionStatsHtml = '';
+
+            // Render the grouped sections
+            for (const [key, stats] of Object.entries(sectionStats)) {
                 const avgScore = stats.attempts > 0 ? (stats.totalScore / stats.attempts).toFixed(1) : 0;
 
-                chapterStatsHtml += `
+                sectionStatsHtml += `
                     <div class="stat-card">
                         <div class="stat-number">${stats.bestScore}/20</div>
-                        <div class="stat-label">Chapter ${chapter} Best</div>
+                        <div class="stat-label">${key} Best</div>
                         <div style="font-size: 0.9em; color: #888; margin-top: 5px;">
                             ${stats.attempts} attempt${stats.attempts !== 1 ? 's' : ''} • Avg: ${avgScore}
                         </div>
@@ -2918,24 +3083,31 @@
                     </div>
                 </div>
                 
-                <h3 style="margin-bottom: 20px; color: #333;">Chapter Performance</h3>
+                <h3 style="margin-bottom: 20px; color: #333;">Section Performance</h3>
                 <div class="stats-grid">
-                    ${chapterStatsHtml}
+                    ${sectionStatsHtml}
                 </div>
                 
                 <div style="text-align: center; margin-top: 30px;">
                     <button class="btn btn-secondary" onclick="clearStatistics()" style="margin-right: 10px;">Clear Data</button>
-                    <button class="btn btn-primary" onclick="exportStatistics()">Export Results</button>
+                    ${!isGlobalStatsView ? `<button class="btn btn-primary" onclick="exportStatistics()">Export Results</button>` : ''}
                 </div>
             `;
         }
 
         function clearStatistics() {
             if (confirm('Are you sure you want to clear all statistics? This cannot be undone.')) {
-                scoreHistory = [];
-                bookmarkedQuestions = [];
-                localStorage.removeItem('quizScoreHistory');
-                localStorage.removeItem('quizBookmarks');
+                if (isGlobalStatsView) {
+                    appData['mock1'] = { scoreHistory: [], bookmarks: [] };
+                    appData['mock2'] = { scoreHistory: [], bookmarks: [] };
+                    scoreHistory = [];
+                    bookmarkedQuestions = [];
+                    localStorage.setItem('quizAppData', JSON.stringify(appData));
+                } else {
+                    scoreHistory = [];
+                    bookmarkedQuestions = [];
+                    saveAppData();
+                }
                 displayStatistics();
             }
         }
@@ -2960,20 +3132,16 @@
 
         function selectMock(mockNumber) {
             currentMock = mockNumber;
-            document.getElementById('mockSelection').classList.add('hidden');
-            document.getElementById('chapterSelection').classList.remove('hidden');
-            document.getElementById('headerInfo').textContent = `Mock Test ${mockNumber} - Select a Chapter`;
-            document.querySelector('.header h1').textContent = `Project Management Mock Test 7 - MOCK_${mockNumber}`;
+            syncDataForMock();
+            navigateToView('chapterSelection');
+            document.getElementById('headerInfo').textContent = `Chapter ${mockNumber} - Select a Section`;
+            document.querySelector('.header h1').textContent = `Project Management Quiz - Chapter ${mockNumber}`;
         }
 
         function backToMocks() {
-            document.getElementById('mockSelection').classList.remove('hidden');
-            document.getElementById('chapterSelection').classList.add('hidden');
-            document.getElementById('quizContent').classList.add('hidden');
-            document.getElementById('results').classList.add('hidden');
-            document.getElementById('statistics').classList.add('hidden');
-            document.getElementById('headerInfo').textContent = 'Select a Mock Test to Begin';
-            document.querySelector('.header h1').textContent = 'Project Management Mock Test 7';
+            navigateToView('mockSelection');
+            document.getElementById('headerInfo').textContent = 'Select a Chapter to Begin';
+            document.querySelector('.header h1').textContent = 'Project Management Quiz';
         }
 
         function initChapters() {
@@ -2984,7 +3152,7 @@
                 const btn = document.createElement('button');
                 btn.className = 'chapter-btn';
                 btn.innerHTML = `
-                    Chapter ${i + 1}
+                    Section ${i + 1}
                     <div class="chapter-info">Questions ${i * 20 + 1}-${i * 20 + 20}</div>
                 `;
                 btn.onclick = () => startChapter(i);
@@ -3007,10 +3175,9 @@
             shuffledQuestions = shuffleChapterQuestions(originalQuestions);
             chapterQuestions = shuffledQuestions;
 
-            document.getElementById('chapterSelection').classList.add('hidden');
-            document.getElementById('quizContent').classList.remove('hidden');
+            navigateToView('quizContent');
             document.getElementById('progressBarContainer').style.display = 'block';
-            document.getElementById('headerInfo').textContent = `Chapter ${chapterIndex + 1} - Question 1 of 20`;
+            document.getElementById('headerInfo').textContent = `Section ${chapterIndex + 1} - Question 1 of 20`;
 
             // Start timer for first question
             startTimer(90);
@@ -3023,7 +3190,7 @@
 
             document.getElementById('questionNumber').textContent = `Question ${currentQuestion + 1} of 20`;
             document.getElementById('questionText').textContent = q.q;
-            document.getElementById('headerInfo').textContent = `Chapter ${currentChapter + 1} - Question ${currentQuestion + 1} of 20`;
+            document.getElementById('headerInfo').textContent = `Section ${currentChapter + 1} - Question ${currentQuestion + 1} of 20`;
 
             const optionsHtml = q.o.map((option, index) => `
                 <li class="option">
@@ -3051,7 +3218,7 @@
             }
 
             document.getElementById('prevBtn').disabled = currentQuestion === 0;
-            document.getElementById('nextBtn').textContent = currentQuestion === chapterQuestions.length - 1 ? 'Finish Chapter' : 'Next';
+            document.getElementById('nextBtn').textContent = currentQuestion === chapterQuestions.length - 1 ? 'Finish Section' : 'Next';
 
             // Update bookmark button
             updateBookmarkButton();
@@ -3160,23 +3327,19 @@
             };
 
             scoreHistory.push(attempt);
-            localStorage.setItem('quizScoreHistory', JSON.stringify(scoreHistory));
+            saveAppData();
 
-            document.getElementById('quizContent').classList.add('hidden');
-            document.getElementById('results').classList.remove('hidden');
+            navigateToView('results');
             document.getElementById('scoreNumber').textContent = score;
             document.getElementById('resultDetails').innerHTML = resultsHtml;
-            document.getElementById('headerInfo').textContent = `Chapter ${currentChapter + 1} - Results`;
+            document.getElementById('headerInfo').textContent = `Section ${currentChapter + 1} - Results`;
             document.getElementById('progressBarContainer').style.display = 'none';
         }
 
         function backToChapters() {
-            document.getElementById('chapterSelection').classList.remove('hidden');
-            document.getElementById('quizContent').classList.add('hidden');
-            document.getElementById('results').classList.add('hidden');
-            document.getElementById('statistics').classList.add('hidden');
+            navigateToView('chapterSelection');
             document.getElementById('progressBarContainer').style.display = 'none';
-            document.getElementById('headerInfo').textContent = 'Select a Chapter to Begin';
+            document.getElementById('headerInfo').textContent = 'Select a Section to Begin';
             stopTimer();
         }
 
@@ -3195,15 +3358,14 @@
             chapterQuestions = shuffledQuestions;
 
             // Hide results and show quiz content
-            document.getElementById('results').classList.add('hidden');
-            document.getElementById('quizContent').classList.remove('hidden');
+            navigateToView('quizContent');
             document.getElementById('progressBarContainer').style.display = 'block';
 
             // Reset to first question
             currentQuestion = 0;
 
             // Update header
-            document.getElementById('headerInfo').textContent = `Chapter ${currentChapter + 1} - Question 1 of 20`;
+            document.getElementById('headerInfo').textContent = `Section ${currentChapter + 1} - Question 1 of 20`;
 
             // Display first question
             displayQuestion();
