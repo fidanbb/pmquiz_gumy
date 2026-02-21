@@ -103,3 +103,10 @@ dist
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Vercel Deployment Exclusions
+*.js
+*.pdf
+*.txt
+mock2_data.json
+view_images.html

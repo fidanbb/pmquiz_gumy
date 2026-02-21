@@ -58,32 +58,44 @@
         }
 
         /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 95%;
+            }
+
+            .chapter-grid {
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                gap: 15px;
+            }
+        }
+
         @media (max-width: 768px) {
             body {
-                padding: 10px;
+                padding: 0;
             }
 
             .container {
                 margin: 0;
                 border-radius: 0;
+                max-width: 100%;
             }
 
             .header {
-                padding: 20px;
+                padding: 15px;
             }
 
             .header h1 {
-                font-size: 24px;
+                font-size: 22px;
             }
 
             .chapter-selection,
             .quiz-content,
             .results {
-                padding: 20px;
+                padding: 15px;
             }
 
             .chapter-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-columns: 1fr;
                 gap: 15px;
             }
 
@@ -94,18 +106,26 @@
 
             .question-text {
                 font-size: 16px;
+                word-wrap: break-word;
+            }
+
+            .question-text img {
+                max-width: 100% !important;
+                height: auto !important;
             }
 
             .option label {
                 padding: 12px;
-                flex-direction: column;
+                flex-direction: row;
                 align-items: flex-start;
             }
 
-            .option input[type="radio"] {
-                margin-right: 8px;
-                margin-top: 0;
-                margin-bottom: 8px;
+            .option input[type="radio"],
+            .option input[type="checkbox"] {
+                margin-right: 12px;
+                margin-top: 2px;
+                margin-bottom: 0;
+                flex-shrink: 0;
             }
 
             .navigation {
@@ -129,35 +149,31 @@
             }
 
             .score-circle {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
             }
 
             .score-number {
-                font-size: 36px;
+                font-size: 32px;
             }
 
             .score-label {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
 
         @media (max-width: 480px) {
-            .chapter-grid {
-                grid-template-columns: 1fr;
-            }
-
             .chapter-btn {
-                padding: 25px 20px;
+                padding: 15px 10px;
             }
 
             .question-text {
                 font-size: 15px;
-                line-height: 1.5;
+                line-height: 1.4;
             }
 
             .option label {
-                padding: 15px;
+                padding: 12px 10px;
             }
 
             .option-text {
@@ -753,7 +769,7 @@
 
         <div class="quiz-content hidden" id="quizContent">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <button class="back-btn" onclick="backToChapters()">← Back to Chapters</button>
+                <button class="back-btn" onclick="backToChapters()">← Back to Sections</button>
                 <div style="display: flex; gap: 10px; align-items: center;">
                     <button class="btn btn-secondary" id="bookmarkBtn" onclick="toggleBookmark()"
                         style="padding: 8px 12px; font-size: 18px;">☆</button>
