@@ -1,0 +1,113 @@
+Question 25 
+Hint: What kind of action is most likely a strategy of avoiding the threat entirely, transferring it to a third party, mitigating its likelihood of occurring, actively 
+accepting it by putting a reserve in place, and escalating its handling to a higher authority?
+Explanation:
+Risk avoidance is when the project team acts to eliminate the threat or protect the project from its impact. The avoid strategy, including project 
+cancellation, may be adopted when the level of overall project risk is significantly negative.
+Transferring the risk involves shifting ownership of a threat to a third party to manage the risk and bear the impact if it occurs. Examples of risk transferring 
+include the use of insurance, warranties, guarantees, etc. These actions typically involve payment of a risk premium to the party taking on the threat.
+In risk mitigation, the action is taken to reduce the probability and/or impact of a risk - automating processes aims to do just that (assuming some project 
+tasks can be done automatically rather than manually).
+When a risk is actively accepted, its existence is acknowledged, but no immediate proactive action is taken; instead, a reserve is put in place. Hiring reserve 
+workers are an example of risk acceptance.
+Lastly, when escalating risk to management, a project team acknowledges that decision-making related to the risk is out of the project team's control and 
+beyond their level of authority.
+
+Question 26 
+Hint: What action would best ensure the required internal resource is available for the project during or before the initiation stage?
+Correct Answer: D 
+Explanation:
+The question suggests that the project manager is performing the Acquire Resources process. Pre-assignment is one of the tools and techniques that may be used in this process. When physical 
+or team resources for a project are determined in advance, they are considered pre-assigned. This situation can occur if the project is the result of specific resources being identified as part of a 
+competitive proposal or if the project is dependent upon the expertise of a particular person. Had the qualified agile coach employed by the company been pre-assigned, the resource may have 
+been available for the other project and the situation described by the question may have been avoided.
+Details for Each Option:
+A
+Documenting the potential unavailability of the agile coach in the project assumption log
+Incorrect. An assumption log is a project document used to record all assumptions and constraints throughout the project life cycle. While documenting the potential unavailability of the agille 
+coach in the project assumption log would have ensured that the project stakeholders are aware of the situation, this action alone would not have avoided the situation from occurring In the first 
+place.
+B
+Using different verbiage in the resource management plan to remove the requirement for an agile coach
+Incorrect. The resource management plan reflects the contractual requirements, in this case, the use of a qualified agile coach. Changing the verblage of the resource management plan does not 
+change the contractual obligation and is not an ethical approach.
+C
+Assigning a different team member from the company to serve as the agile coach
+Incorrect. The question states that the company only employs one Individual with the required skillset to serve as the agile coach, and that resource is not available. Therefore, allowing another 
+employee without the contractually required skillset to serve as the agile coach is not a viable option.
+D
+Securing the internal agile certified practitioner with a pre-assignment when this requirement was first identified.
+Correct. When physical or team resources for a project are determined in advance, they are considered pre-assigned. Since the need for an agile certified practitioner would have been Identified 
+during the initiation of the project, the Internal agille certified practitioner could have been pre-assigned to meet this requirement in the contract.
+Exam Content Outline: Domain: 1. People / Task: 1.0 Build a team/ PM Approach: Agile/Hybrid
+
+Question 33 
+Hint: Which of the tools in the list are valid data analysis tools for monitoring & controlling project work, and what exactly is analyzed when using each of 
+them?
+Explanation:
+While alternatives analysis selects a corrective action or a combination of corrective and preventive actions to implement, cost-benefit analysis determines 
+the best corrective action when it comes to cost factors in a project that deviates from the plan. With earned value analysis, project managers will have a 
+more integrated perspective on scope, schedule, and cost performance. Root cause analysis helps identify the main cause or causes of a problem; with 
+trend analysis, future performance can be forecasted based on past results. The differences between planned and actual performance are reviewed with 
+variance analysis. In contrast, business analysis is not a technique that typically used as part of the Monitor and Control Project Work process implied by 
+the scenario.
+
+Question 34 
+Hint: What does a resource breakdown structure visualize, and which categories does it typically contain?
+Explanation:
+The scenario suggests that the project employs a hybrid project management approach. This means that the project manager and team will likely use a 
+combination of agile as well as traditional tools and techniques while planning, executing, monitoring, controlling, and closing the project. A resource 
+breakdown structure is a project document that is created as one of the outputs of the Estimate Activity Resources process implied by the scenario. This 
+document can be graphically displayed as a hierarchical representation of resources by category and type and can help in project resource planning by 
+providing a structured view of project resources.
+A common way to decompose staff (personnel) entries in the resource breakdown structure is to categorize them according to their level of skills or 
+authority. With level 1 indicating a project stakeholder in a leading role, such as the product owner, who is likely to be mapped to the "Personnel (level 1)" 
+category. A team member best fits the "Personnel (level 2)" category, and so on. A data server best matches the equipment category, and the team space 
+room reasonably falls under facilities. The remaining digital scrum board can be logically mapped as software.
+Exam Content Outline: Domain: 1. People/ Task: 1.4 Empower team members and stakeholders / PM Approach: Agile/Hybrid
+
+Question 56 
+Hint: Which stakeholders are interested in product-specific features? Who is mostly concerned with organizational interfaces? Who could help fulfilling 
+security requirements?
+Explanation:
+Theoretically, any of the stakeholders can be interested in any of the various requirement types. While this can definitely be true in real-life situations, the 
+idea, while taking the exam, is to find the 'best match' even if it does not look/sound to be a perfect/ideal combination.
+For example, project sponsors are commonly high-ranking managers who endorse and provide political support for the completion of a project; therefore, 
+a project sponsor would likely be interested in organizational requirements being met.
+Those who will use the project deliverables (e.g., the software product developed by the project) are primarily interested in the product features; hence, 
+the functional requirements are likely to be the central interest of the end users.
+The foremost concern of data security experts is to make sure the product meets security requirements, policies, and regulations, making non-functional 
+requirements the best match for their area of interest/expertise.
+Project team members, such as developers, may be interested to see that the technical requirements are properly implemented.
+For project managers, seeing the whole picture is their main focus.
+Exam Content Outline: Domain: 2. Process / Task: 2.4 Engage stakeholders / PM Approach: Agile/Hybrid
+
+Question 57 
+Hint: What becomes more challenging in a virtual environment?
+Correct Answer: B 
+Explanation:
+Communication planning becomes increasingly important in a virtual team environment. Additional time may be needed to set clear expectations, facilitate communications, develop protocols 
+for resolving conflict, include people in decision making, understand cultural differences, and share credit for success. When the project team is located in the same physical space, 
+communication is much easier and more effective. Face-to-face communication is richer and is the most effective form of communication. Tone and non-verbal communication may be lost in a 
+virtual environment. Additionally, virtual teams lack the intangible benefits of colocated teams who are able to bond more easily and become more cohesive. Therefore, communication planning 
+will require special consideration while working with a virtual team.
+Details for Each Option:
+A  Project expenses
+Incorrect. One of the advantages of the team members working from their home offices as a virtual team is the expense savings associated with offices and physical equipment needed for 
+employees if they were working in the company's offices. Therefore, project expenses are not a special consideration for a virtual team, making this choice an incorrect response. 
+B  Communication planning
+Correct. Communication planning becomes increasingly important in a virtual team environment. Additional time may be needed to set clear expectations, facilitate communications, develop 
+protocols for resolving conflict, include people in decision making, understand cultural differences, and share credit for success. Therefore, communication planning should be specifically 
+considered while the work is performed by a virtual team.
+C  Pre-assigned team members
+Incorrect. When physical or team resources for a project are determined in advance, they are considered pre-assigned. Whether or not the project team members were pre-assigned has no 
+bearing on the team operating in a virtual environment. Therefore, this answer can be eliminated.
+D  Team members with disabilities or mobility issues
+Incorrect. The question states the team members will be allowed to work from their home offices. Therefore, individuals with disabilities or mobility issues will be able to work from home 
+without a need to commute to their local office. Thus, no special considerations should be taken into account with the use of a virtual team when some of the team members have disabilities or 
+mobility issues.
+Exam Content Outline:
+Domain: 1. People
+Task: 1.11 Engage and support virtual teams
+PM Approach: Predictive
+

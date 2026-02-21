@@ -616,6 +616,70 @@
             color: #c084fc;
             border-color: #a855f7;
         }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.hidden {
+            display: none;
+            opacity: 0;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .dark-mode .modal-content {
+            background: #2c3e50;
+            color: #ecf0f1;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .dark-mode .modal-content h3 {
+            color: #ecf0f1;
+        }
+
+        .modal-content p {
+            margin-bottom: 25px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .dark-mode .modal-content p {
+            color: #bdc3c7;
+        }
+
+        .modal-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
     </style>
 </head>
 
@@ -672,6 +736,19 @@
                 </div>
             </div>
             <div class="chapter-grid" id="chapterGrid"></div>
+        </div>
+
+        <div id="shuffleModal" class="modal-overlay hidden">
+            <div class="modal-content">
+                <h3>Start Section</h3>
+                <p>Would you like to shuffle the questions and options for this session?</p>
+                <div class="modal-buttons">
+                    <button class="btn btn-primary" onclick="confirmStart(true)">🔀 Yes, Shuffle (Recommended)</button>
+                    <button class="btn btn-secondary" onclick="confirmStart(false)">📄 No, Keep Original Order</button>
+                    <button class="btn btn-secondary" onclick="closeShuffleModal()"
+                        style="background: transparent; border: 1px solid #ccc;">Cancel</button>
+                </div>
+            </div>
         </div>
 
         <div class="quiz-content hidden" id="quizContent">
@@ -734,13 +811,19 @@
                     "Failure to respond to changes in scope",
                     "Non colocated team members",
                     "Delivering working software in each sprint",
-                    "Demotivated team members",
+                    "Demotivated team members"
+                ],
+                "a": 1
+            },
+            {
+                "q": "A client completed a walkthrough of the deliverables and formally accepted the work. The next day, the project manager returns to the project site to pick up company equipment and make arrangements for final payment. What should the project manager do when meeting the client as part of project closure?",
+                "o": [
                     "Confirm the final acceptance of the deliverable",
                     "Settle procurement claims",
                     "Validate the scope objectives have been met",
                     "Ensure quality assurance was performed"
                 ],
-                "a": 1
+                "a": 0
             },
             {
                 "q": "You have just been assigned to an upcoming agile project. As part of pre-project work, you review all of the organization's policies and procedures regarding compliance. You realize that only some of them may be applicable to your project. What should you do first?",
@@ -953,6 +1036,16 @@
                 "a": 1
             },
             {
+                "q": "Project stakeholders meet to discuss the threat of a severe staff shortage due to a potential union workers strike that might take place during project execution. With various response strategies on the table, the stakeholders want to make a decision as to how to address the issue should the threat occur. What response strategy will the stakeholders be using while deciding to implement one of the following decisions?<br><br><img class=\"question-img\" src=\"images/image_1_page_25.png\" style=\"max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;\">",
+                "o": [
+                    "<strong style=\"color: #2563eb;\">Avoid</strong> ➔ Cancel the project<br><strong style=\"color: #2563eb;\">Transfer</strong> ➔ Outsource staffing<br><strong style=\"color: #2563eb;\">Mitigate</strong> ➔ Automate processes<br><strong style=\"color: #2563eb;\">Accept</strong> ➔ Hire replacement workers if needed<br><strong style=\"color: #2563eb;\">Escalate</strong> ➔ Delegate to management",
+                    "<strong style=\"color: #2563eb;\">Transfer</strong> ➔ Cancel the project<br><strong style=\"color: #2563eb;\">Mitigate</strong> ➔ Outsource staffing<br><strong style=\"color: #2563eb;\">Accept</strong> ➔ Automate processes<br><strong style=\"color: #2563eb;\">Escalate</strong> ➔ Hire replacement workers if needed<br><strong style=\"color: #2563eb;\">Avoid</strong> ➔ Delegate to management",
+                    "<strong style=\"color: #2563eb;\">Mitigate</strong> ➔ Cancel the project<br><strong style=\"color: #2563eb;\">Accept</strong> ➔ Outsource staffing<br><strong style=\"color: #2563eb;\">Escalate</strong> ➔ Automate processes<br><strong style=\"color: #2563eb;\">Avoid</strong> ➔ Hire replacement workers if needed<br><strong style=\"color: #2563eb;\">Transfer</strong> ➔ Delegate to management",
+                    "<strong style=\"color: #2563eb;\">Accept</strong> ➔ Cancel the project<br><strong style=\"color: #2563eb;\">Escalate</strong> ➔ Outsource staffing<br><strong style=\"color: #2563eb;\">Avoid</strong> ➔ Automate processes<br><strong style=\"color: #2563eb;\">Transfer</strong> ➔ Hire replacement workers if needed<br><strong style=\"color: #2563eb;\">Mitigate</strong> ➔ Delegate to management"
+                ],
+                "a": 0
+            },
+            {
                 "q": "To comply with the customer's contract, the project must use a certified agile practitioner to lead and coach the project team. However, the only certified agile practitioner employed by the company was just assigned to another project. The project manager must now hire an independent contractor to serve as the agile coach, which delays the start of project execution. Which of the following may have helped to avoid the delay in executing the project?",
                 "o": [
                     "Documenting the potential unavailability of the agile coach in the project assumption log",
@@ -1024,21 +1117,21 @@
             },
             {
                 "q": "A project is plagued by various issues, such as deteriorating team performance, cost and schedule overruns, defective deliverables, etc. The project manager is struggling to monitor and control the work and decides to use some of the data analysis techniques to identify the issues and determine the best course of action. How can the project manager use the following techniques to identify the various issues impacting this project? (Drag and drop the items from right to left.)<br><br><img class=\"question-img\" src=\"images/image_2_page_33.png\" style=\"max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;\">",
-                                "o": [
-                    "Alternatives Analysis = Selection; Cost-benefit = Assess costs; Earned Value = Integrated view; Root Cause = Main issue; Trend = Forecast; Variance = Planned vs Actual",
-                    "Alternatives Analysis = Forecast; Cost-benefit = Selection; Earned Value = Main issue; Root Cause = Planned vs Actual; Trend = Integrated view; Variance = Assess costs",
-                    "Alternatives Analysis = Integrated view; Cost-benefit = Forecast; Earned Value = Selection; Root Cause = Assess costs; Trend = Planned vs Actual; Variance = Main issue",
-                    "Alternatives Analysis = Assess costs; Cost-benefit = Main issue; Earned Value = Forecast; Root Cause = Integrated view; Trend = Selection; Variance = Planned vs Actual"
+                "o": [
+                    "<strong style=\"color: #2563eb;\">Alternatives analysis</strong> ➔ Corrective actions for better performance<br><strong style=\"color: #2563eb;\">Cost-benefit analysis</strong> ➔ Corrective actions regarding the cost<br><strong style=\"color: #2563eb;\">Earned value analysis</strong> ➔ Integrated perspective on project performance<br><strong style=\"color: #2563eb;\">Root cause analysis</strong> ➔ Identify the main reason for problems<br><strong style=\"color: #2563eb;\">Trend analysis</strong> ➔ Forecast performance based on results<br><strong style=\"color: #2563eb;\">Variance analysis</strong> ➔ Compare planned and actual performance<br><strong style=\"color: #2563eb;\">Business analysis</strong> ➔ (Not applicable)",
+                    "<strong style=\"color: #2563eb;\">Cost-benefit analysis</strong> ➔ Corrective actions for better performance<br><strong style=\"color: #2563eb;\">Earned value analysis</strong> ➔ Corrective actions regarding the cost<br><strong style=\"color: #2563eb;\">Root cause analysis</strong> ➔ Integrated perspective on project performance<br><strong style=\"color: #2563eb;\">Trend analysis</strong> ➔ Identify the main reason for problems<br><strong style=\"color: #2563eb;\">Variance analysis</strong> ➔ Forecast performance based on results<br><strong style=\"color: #2563eb;\">Business analysis</strong> ➔ Compare planned and actual performance<br><strong style=\"color: #2563eb;\">Alternatives analysis</strong> ➔ (Not applicable)",
+                    "<strong style=\"color: #2563eb;\">Earned value analysis</strong> ➔ Corrective actions for better performance<br><strong style=\"color: #2563eb;\">Root cause analysis</strong> ➔ Corrective actions regarding the cost<br><strong style=\"color: #2563eb;\">Trend analysis</strong> ➔ Integrated perspective on project performance<br><strong style=\"color: #2563eb;\">Variance analysis</strong> ➔ Identify the main reason for problems<br><strong style=\"color: #2563eb;\">Business analysis</strong> ➔ Forecast performance based on results<br><strong style=\"color: #2563eb;\">Alternatives analysis</strong> ➔ Compare planned and actual performance<br><strong style=\"color: #2563eb;\">Cost-benefit analysis</strong> ➔ (Not applicable)",
+                    "<strong style=\"color: #2563eb;\">Root cause analysis</strong> ➔ Corrective actions for better performance<br><strong style=\"color: #2563eb;\">Trend analysis</strong> ➔ Corrective actions regarding the cost<br><strong style=\"color: #2563eb;\">Variance analysis</strong> ➔ Integrated perspective on project performance<br><strong style=\"color: #2563eb;\">Business analysis</strong> ➔ Identify the main reason for problems<br><strong style=\"color: #2563eb;\">Alternatives analysis</strong> ➔ Forecast performance based on results<br><strong style=\"color: #2563eb;\">Cost-benefit analysis</strong> ➔ Compare planned and actual performance<br><strong style=\"color: #2563eb;\">Earned value analysis</strong> ➔ (Not applicable)"
                 ],
                 "a": 0
             },
             {
                 "q": "A software development project is in planning. The planning is done traditionally, but the product will be developed incrementally. The project manager creates a resource breakdown structure to identify staffing needs, work assignments, and training required for the team members. The project manager assigns hierarchical level 1 to individuals in a leading role. How should the project manager map the resource breakdown structure's entries to the resource breakdown structure's categories? (Drag and drop the items from right to left.)<br><br><img class=\"question-img\" src=\"images/image_3_page_34.png\" style=\"max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;\">",
-                                "o": [
-                    "Product Owner = Personnel (Level 1); Team Member = Personnel (Level 2); Data Server = Equipment; Team Space = Facilities; Digital Scrum Board = Software",
-                    "Product Owner = Facilities; Team Member = Software; Data Server = Personnel (Level 1); Team Space = Equipment; Digital Scrum Board = Personnel (Level 2)",
-                    "Product Owner = Equipment; Team Member = Facilities; Data Server = Software; Team Space = Personnel (Level 2); Digital Scrum Board = Personnel (Level 1)",
-                    "Product Owner = Personnel (Level 2); Team Member = Equipment; Data Server = Facilities; Team Space = Personnel (Level 1); Digital Scrum Board = Software"
+                "o": [
+                    "<strong style=\"color: #2563eb;\">Product owner</strong> ➔ Personnel (level 1)<br><strong style=\"color: #2563eb;\">Team member</strong> ➔ Personnel (level 2)<br><strong style=\"color: #2563eb;\">Data server</strong> ➔ Equipment<br><strong style=\"color: #2563eb;\">Team space room</strong> ➔ Facilities<br><strong style=\"color: #2563eb;\">Digital scrum board</strong> ➔ Software<br><strong style=\"color: #2563eb;\">Office clerk</strong> ➔ Personnel (level 3)",
+                    "<strong style=\"color: #2563eb;\">Team member</strong> ➔ Personnel (level 1)<br><strong style=\"color: #2563eb;\">Data server</strong> ➔ Personnel (level 2)<br><strong style=\"color: #2563eb;\">Team space room</strong> ➔ Equipment<br><strong style=\"color: #2563eb;\">Digital scrum board</strong> ➔ Facilities<br><strong style=\"color: #2563eb;\">Office clerk</strong> ➔ Software<br><strong style=\"color: #2563eb;\">Product owner</strong> ➔ Personnel (level 3)",
+                    "<strong style=\"color: #2563eb;\">Data server</strong> ➔ Personnel (level 1)<br><strong style=\"color: #2563eb;\">Team space room</strong> ➔ Personnel (level 2)<br><strong style=\"color: #2563eb;\">Digital scrum board</strong> ➔ Equipment<br><strong style=\"color: #2563eb;\">Office clerk</strong> ➔ Facilities<br><strong style=\"color: #2563eb;\">Product owner</strong> ➔ Software<br><strong style=\"color: #2563eb;\">Team member</strong> ➔ Personnel (level 3)",
+                    "<strong style=\"color: #2563eb;\">Team space room</strong> ➔ Personnel (level 1)<br><strong style=\"color: #2563eb;\">Digital scrum board</strong> ➔ Personnel (level 2)<br><strong style=\"color: #2563eb;\">Office clerk</strong> ➔ Equipment<br><strong style=\"color: #2563eb;\">Product owner</strong> ➔ Facilities<br><strong style=\"color: #2563eb;\">Team member</strong> ➔ Software<br><strong style=\"color: #2563eb;\">Data server</strong> ➔ Personnel (level 3)"
                 ],
                 "a": 0
             },
@@ -1255,11 +1348,11 @@
             },
             {
                 "q": "After completing an iteration, an agile team is planning to hold an iteration review meeting to demonstrate the new product increment developed during the iteration. To ensure that relevant stakeholders are invited, the team is classifying all project stakeholders according to the type of requirements the stakeholders are likely to be interested in during the demo. How should the team classify the stakeholders with regard to their requirements? (Drag and drop the items from right to left.)<br><br><img class=\"question-img\" src=\"images/image_6_page_56.png\" style=\"max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px; margin-top: 10px;\">",
-                                "o": [
-                    "Project Sponsor = Organizational; End Users = Functional; Data Security Experts = Non-functional; Developers = Technical",
-                    "Project Sponsor = Functional; End Users = Organizational; Data Security Experts = Technical; Developers = Non-functional",
-                    "Project Sponsor = Non-functional; End Users = Technical; Data Security Experts = Organizational; Developers = Functional",
-                    "Project Sponsor = Technical; End Users = Non-functional; Data Security Experts = Functional; Developers = Organizational"
+                "o": [
+                    "<strong style=\"color: #2563eb;\">Project sponsor</strong> ➔ Organizational requirements<br><strong style=\"color: #2563eb;\">End user</strong> ➔ Functional requirements<br><strong style=\"color: #2563eb;\">Data security expert</strong> ➔ Non-functional requirements<br><strong style=\"color: #2563eb;\">Developer</strong> ➔ Technical requirements<br><strong style=\"color: #2563eb;\">Project manager</strong> ➔ All types of requirements",
+                    "<strong style=\"color: #2563eb;\">End user</strong> ➔ Organizational requirements<br><strong style=\"color: #2563eb;\">Data security expert</strong> ➔ Functional requirements<br><strong style=\"color: #2563eb;\">Developer</strong> ➔ Non-functional requirements<br><strong style=\"color: #2563eb;\">Project manager</strong> ➔ Technical requirements<br><strong style=\"color: #2563eb;\">Project sponsor</strong> ➔ All types of requirements",
+                    "<strong style=\"color: #2563eb;\">Data security expert</strong> ➔ Organizational requirements<br><strong style=\"color: #2563eb;\">Developer</strong> ➔ Functional requirements<br><strong style=\"color: #2563eb;\">Project manager</strong> ➔ Non-functional requirements<br><strong style=\"color: #2563eb;\">Project sponsor</strong> ➔ Technical requirements<br><strong style=\"color: #2563eb;\">End user</strong> ➔ All types of requirements",
+                    "<strong style=\"color: #2563eb;\">Developer</strong> ➔ Organizational requirements<br><strong style=\"color: #2563eb;\">Project manager</strong> ➔ Functional requirements<br><strong style=\"color: #2563eb;\">Project sponsor</strong> ➔ Non-functional requirements<br><strong style=\"color: #2563eb;\">End user</strong> ➔ Technical requirements<br><strong style=\"color: #2563eb;\">Data security expert</strong> ➔ All types of requirements"
                 ],
                 "a": 0
             },
@@ -3170,12 +3263,33 @@
                     Section ${i + 1}
                     <div class="chapter-info">Questions ${i * 20 + 1}-${i * 20 + 20}</div>
                 `;
-                btn.onclick = () => startChapter(i);
+                btn.onclick = () => promptShuffle(i);
                 grid.appendChild(btn);
             }
         }
 
-        function startChapter(chapterIndex) {
+        let pendingChapterIndex = null;
+
+        function promptShuffle(chapterIndex) {
+            pendingChapterIndex = chapterIndex;
+            document.getElementById('shuffleModal').classList.remove('hidden');
+        }
+
+        function closeShuffleModal() {
+            document.getElementById('shuffleModal').classList.add('hidden');
+        }
+
+        function confirmStart(shouldShuffle) {
+            const indexToStart = pendingChapterIndex;
+            closeShuffleModal();
+            pendingChapterIndex = null;
+
+            if (indexToStart !== null) {
+                startChapter(indexToStart, shouldShuffle);
+            }
+        }
+
+        function startChapter(chapterIndex, shouldShuffle = true) {
             currentChapter = chapterIndex;
             currentQuestion = 0;
             userAnswers = [];
@@ -3186,9 +3300,21 @@
             const sourceQuestions = currentMock === 1 ? mock1Questions : mock2Questions;
             const originalQuestions = sourceQuestions.slice(startQ, endQ);
 
-            // Shuffle questions and their options
-            shuffledQuestions = shuffleChapterQuestions(originalQuestions);
-            chapterQuestions = shuffledQuestions;
+            // Shuffle questions and their options based on user preference
+            if (shouldShuffle) {
+                shuffledQuestions = shuffleChapterQuestions(originalQuestions);
+                chapterQuestions = shuffledQuestions;
+            } else {
+                // Keep original order, avoid modifying the raw array directly in memory
+                chapterQuestions = originalQuestions.map(q => ({
+                    ...q,
+                    q: q.q,
+                    o: [...q.o],
+                    a: q.a,
+                    isMultiple: q.isMultiple,
+                    originalOrder: [0, 1, 2, 3] // Placeholder mapping
+                }));
+            }
 
             navigateToView('quizContent');
             document.getElementById('progressBarContainer').style.display = 'block';
@@ -3293,8 +3419,20 @@
                 const correctAnswers = getCorrectAnswers(q);
                 let isCorrect = false;
 
+                // Validate multiple-choice answers
                 if (isMultiple) {
-                    isCorrect = checkMultipleChoiceAnswer(q, userAnswer);
+                    let selectedAnswers = Array.isArray(userAnswer) ? userAnswer : [];
+                    isCorrect = true;
+                    if (correctAnswers.length !== selectedAnswers.length) {
+                        isCorrect = false;
+                    } else {
+                        for (let ans of correctAnswers) {
+                            if (!selectedAnswers.includes(ans)) {
+                                isCorrect = false;
+                                break;
+                            }
+                        }
+                    }
                 } else {
                     isCorrect = userAnswer === correctAnswers[0];
                 }
