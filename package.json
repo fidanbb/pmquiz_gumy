@@ -10,7 +10,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "pdf-parse": "^1.1.1",
-    "pdfjs-dist": "^3.8.162"
+    "express": "^5.2.1",
+    "pdf-image": "^2.0.0",
+    "pdf-parse": "^1.1.4",
+    "pdfjs-dist": "^3.11.174",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^24.37.5"
   }
 }

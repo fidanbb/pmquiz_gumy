@@ -25,7 +25,7 @@ async function extractImages() {
 
                     const png = new PNG({ width: img.width, height: img.height });
 
-                    if (img.kind === 1) { // RGB
+                    if (img.kind === 2) { // RGB
                         for (let y = 0; y < img.height; y++) {
                             for (let x = 0; x < img.width; x++) {
                                 const idx = (img.width * y + x) << 2;
@@ -33,14 +33,14 @@ async function extractImages() {
                                 png.data[idx] = img.data[srcIdx];
                                 png.data[idx + 1] = img.data[srcIdx + 1];
                                 png.data[idx + 2] = img.data[srcIdx + 2];
-                                png.data[idx + 3] = 255; // Alpha
+                                png.data[idx + 3] = 255;
                             }
                         }
-                    } else if (img.kind === 2) { // RGBA
+                    } else if (img.kind === 3) { // RGBA
                         for (let p = 0; p < img.width * img.height * 4; p++) {
                             png.data[p] = img.data[p];
                         }
-                    } else if (img.kind === 3) { // Grayscale
+                    } else if (img.kind === 1) { // Grayscale
                         for (let y = 0; y < img.height; y++) {
                             for (let x = 0; x < img.width; x++) {
                                 const idx = (img.width * y + x) << 2;
@@ -52,10 +52,19 @@ async function extractImages() {
                                 png.data[idx + 3] = 255;
                             }
                         }
+                    } else {
+                        console.log(`Unknown image kind ${img.kind} for ${fileName}, writing as RGB...`);
+                        for (let p = 0; p < (img.width * img.height * 3); p += 3) {
+                            const idx = (p / 3) * 4;
+                            png.data[idx] = img.data[p];
+                            png.data[idx + 1] = img.data[p + 1];
+                            png.data[idx + 2] = img.data[p + 2];
+                            png.data[idx + 3] = 255;
+                        }
                     }
 
                     png.pack().pipe(fs.createWriteStream(fileName));
-                    console.log(`Saved ${fileName}`);
+                    console.log(`Saved ${fileName} (kind: ${img.kind}, ${img.width}x${img.height})`);
                 }
             }
         }
