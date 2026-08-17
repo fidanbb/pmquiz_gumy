@@ -109,4 +109,7 @@ Thumbs.db
 *.pdf
 *.txt
 mock2_data.json
+mock3_data.json
 view_images.html
+pdf_render.html
+
